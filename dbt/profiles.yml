@@ -1,4 +1,4 @@
-matt_demo:
+dbt_btc:
   outputs:
     dev:
       type: postgres
