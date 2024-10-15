@@ -1,0 +1,36 @@
+version: 2
+
+sources:
+  - name: raw
+    database: company_dw
+    schema: raw
+    tables:
+      - name: bitcoin_trades
+        description: "Table containing Bitcoin trade data from a CSV loaded into PostgreSQL."
+        columns:
+          - name: open_timestamp
+            description: "The timestamp when the trades were recorded, represents specific date and time."
+          - name: open
+            description: "The opening price of Bitcoin in this record, indicating the first transaction price at the start of the interval."
+          - name: high
+            description: "The highest price of Bitcoin during the interval."
+          - name: low
+            description: "The lowest price of Bitcoin during the interval."
+          - name: close
+            description: "The closing price of Bitcoin for the interval, indicating the last transaction price at the end of the interval."
+          - name: volume
+            description: "The total volume of Bitcoin traded during the interval."
+          - name: close_timestamp
+            description: "The close timestamp when the trades were recorded, represents specific date and time."
+
+
+          - name: quote_asset_volume
+            description: "The total volume of the quote currency traded during the interval. Format: A floating-point number. The quote asset is the second currency in the trading pair (e.g., USDT in BTC/USDT)."
+          - name: number_of_trades
+            description: "The total number of trades that took place during the interval. Format: An integer representing the number of trades."
+          - name: taker_buy_base_asset_volume
+            description: "The amount of the base asset bought by takers during the interval. Format: A floating-point number. The base asset is the first currency in the trading pair (e.g., BTC in BTC/USDT)."
+          - name: take_buy_quote_asset_volume
+            description: "The amount of the quote asset spent by takers to buy the base asset during the interval. Format: A floating-point number."
+          - name: ignore
+            description: "This column is often present but usually contains no relevant data. It may be a placeholder for future data or included for backward compatibility. Format: This column typically contains zeros or null values."
