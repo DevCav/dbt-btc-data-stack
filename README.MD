@@ -1,6 +1,6 @@
-# Modern Data Tech Stack with Docker
+# Modern Data Tech Stack with Docker to Analyze BTCUSDT
 
-This project demonstrates how to build a local data tech stack using Docker. The stack includes PostgreSQL for databases, Airflow for orchestrating workflows, dbt for data transformations, and Superset for data visualization. Each component is containerized for ease of setup and management.
+This project demonstrates how to build a local data tech stack using Docker analyzing BTCUSDT data. The stack includes PostgreSQL for databases, Airflow for orchestrating workflows, dbt for data transformations, and Superset for data visualization. Each component is containerized for ease of setup and management.
 
 ## Prerequisites
 
