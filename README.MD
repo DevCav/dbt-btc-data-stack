@@ -34,7 +34,7 @@ SUPERSET_SECRET_KEY=your_superset_secret_key
 │   ├── scripts
 │   └── webserver_config.py
 ├── data
-│   ├── crm_sales_data
+│   ├── btcusdt
 ├── dbt
 │   ├── analyses
 │   ├── dbt_packages

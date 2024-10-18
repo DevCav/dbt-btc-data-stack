@@ -4188,3 +4188,24 @@ airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG: btcusdt_data
 [2024-10-18T21:46:57.176+0000] {logging_mixin.py:149} INFO - [2024-10-18T21:46:57.175+0000] {dag.py:2726} INFO - Sync 1 DAGs
 [2024-10-18T21:46:57.200+0000] {logging_mixin.py:149} INFO - [2024-10-18T21:46:57.200+0000] {dag.py:3486} INFO - Setting next_dagrun for btcusdt_data_ingestion to None, run_after=None
 [2024-10-18T21:46:57.221+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingest_btcusdt_data.py took 0.699 seconds
+[2024-10-18T21:47:27.898+0000] {processor.py:157} INFO - Started process (PID=8312) to work on /opt/airflow/dags/ingest_btcusdt_data.py
+[2024-10-18T21:47:27.901+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ingest_btcusdt_data.py for tasks to queue
+[2024-10-18T21:47:27.902+0000] {logging_mixin.py:149} INFO - [2024-10-18T21:47:27.902+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_btcusdt_data.py
+[2024-10-18T21:47:28.469+0000] {processor.py:836} INFO - DAG(s) dict_keys(['btcusdt_data_ingestion']) retrieved from /opt/airflow/dags/ingest_btcusdt_data.py
+[2024-10-18T21:47:28.499+0000] {logging_mixin.py:149} INFO - [2024-10-18T21:47:28.498+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-10-18T21:47:28.524+0000] {logging_mixin.py:149} INFO - [2024-10-18T21:47:28.524+0000] {dag.py:3486} INFO - Setting next_dagrun for btcusdt_data_ingestion to None, run_after=None
+[2024-10-18T21:47:28.544+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingest_btcusdt_data.py took 0.651 seconds
+[2024-10-18T21:47:59.251+0000] {processor.py:157} INFO - Started process (PID=8337) to work on /opt/airflow/dags/ingest_btcusdt_data.py
+[2024-10-18T21:47:59.252+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ingest_btcusdt_data.py for tasks to queue
+[2024-10-18T21:47:59.253+0000] {logging_mixin.py:149} INFO - [2024-10-18T21:47:59.253+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_btcusdt_data.py
+[2024-10-18T21:47:59.851+0000] {processor.py:836} INFO - DAG(s) dict_keys(['btcusdt_data_ingestion']) retrieved from /opt/airflow/dags/ingest_btcusdt_data.py
+[2024-10-18T21:47:59.884+0000] {logging_mixin.py:149} INFO - [2024-10-18T21:47:59.884+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-10-18T21:47:59.911+0000] {logging_mixin.py:149} INFO - [2024-10-18T21:47:59.910+0000] {dag.py:3486} INFO - Setting next_dagrun for btcusdt_data_ingestion to None, run_after=None
+[2024-10-18T21:47:59.934+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingest_btcusdt_data.py took 0.688 seconds
+[2024-10-18T21:48:30.607+0000] {processor.py:157} INFO - Started process (PID=8362) to work on /opt/airflow/dags/ingest_btcusdt_data.py
+[2024-10-18T21:48:30.609+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ingest_btcusdt_data.py for tasks to queue
+[2024-10-18T21:48:30.610+0000] {logging_mixin.py:149} INFO - [2024-10-18T21:48:30.610+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_btcusdt_data.py
+[2024-10-18T21:48:31.217+0000] {processor.py:836} INFO - DAG(s) dict_keys(['btcusdt_data_ingestion']) retrieved from /opt/airflow/dags/ingest_btcusdt_data.py
+[2024-10-18T21:48:31.247+0000] {logging_mixin.py:149} INFO - [2024-10-18T21:48:31.246+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-10-18T21:48:31.271+0000] {logging_mixin.py:149} INFO - [2024-10-18T21:48:31.271+0000] {dag.py:3486} INFO - Setting next_dagrun for btcusdt_data_ingestion to None, run_after=None
+[2024-10-18T21:48:31.292+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingest_btcusdt_data.py took 0.690 seconds
