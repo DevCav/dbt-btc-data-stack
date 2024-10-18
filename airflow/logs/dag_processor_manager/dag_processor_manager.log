@@ -41704,3 +41704,63 @@ File Path                                 PID    Runtime      # DAGs    # Errors
 /opt/airflow/dags/run_dbt_init_tasks.py                            1           0  0.17s           2024-10-18T21:48:23
 /opt/airflow/dags/run_dbt_models.py                                1           0  0.15s           2024-10-18T21:48:18
 ================================================================================
+[2024-10-18T21:49:10.865+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/run_dbt_module.py                                0           0  0.08s           2024-10-18T21:48:53
+/opt/airflow/dags/custom_sensors.py                                0           0  0.05s           2024-10-18T21:48:53
+/opt/airflow/dags/ingest_btcusdt_data.py                           1           0  0.76s           2024-10-18T21:49:02
+/opt/airflow/dags/run_dbt_init_tasks.py                            1           0  0.26s           2024-10-18T21:48:54
+/opt/airflow/dags/run_dbt_models.py                                1           0  0.14s           2024-10-18T21:48:48
+================================================================================
+[2024-10-18T21:49:41.162+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/run_dbt_module.py                                0           0  0.05s           2024-10-18T21:49:24
+/opt/airflow/dags/custom_sensors.py                                0           0  0.05s           2024-10-18T21:49:24
+/opt/airflow/dags/ingest_btcusdt_data.py                           1           0  0.99s           2024-10-18T21:49:34
+/opt/airflow/dags/run_dbt_init_tasks.py                            1           0  0.13s           2024-10-18T21:49:24
+/opt/airflow/dags/run_dbt_models.py                                1           0  0.17s           2024-10-18T21:49:19
+================================================================================
+[2024-10-18T21:50:11.324+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/run_dbt_module.py                                0           0  0.05s           2024-10-18T21:49:54
+/opt/airflow/dags/custom_sensors.py                                0           0  0.04s           2024-10-18T21:49:54
+/opt/airflow/dags/ingest_btcusdt_data.py                           1           0  0.71s           2024-10-18T21:50:05
+/opt/airflow/dags/run_dbt_init_tasks.py                            1           0  0.15s           2024-10-18T21:49:54
+/opt/airflow/dags/run_dbt_models.py                                1           0  0.15s           2024-10-18T21:49:49
+================================================================================
+[2024-10-18T21:50:41.560+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/run_dbt_module.py                                0           0  0.05s           2024-10-18T21:50:24
+/opt/airflow/dags/custom_sensors.py                                0           0  0.04s           2024-10-18T21:50:24
+/opt/airflow/dags/ingest_btcusdt_data.py                           1           0  0.78s           2024-10-18T21:50:36
+/opt/airflow/dags/run_dbt_init_tasks.py                            1           0  0.15s           2024-10-18T21:50:24
+/opt/airflow/dags/run_dbt_models.py                                1           0  0.14s           2024-10-18T21:50:19
+================================================================================
+[2024-10-18T21:51:11.982+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/run_dbt_module.py                                0           0  0.06s           2024-10-18T21:50:54
+/opt/airflow/dags/custom_sensors.py                                0           0  0.05s           2024-10-18T21:50:54
+/opt/airflow/dags/ingest_btcusdt_data.py                           1           0  0.68s           2024-10-18T21:51:07
+/opt/airflow/dags/run_dbt_init_tasks.py                            1           0  0.13s           2024-10-18T21:50:54
+/opt/airflow/dags/run_dbt_models.py                                1           0  0.20s           2024-10-18T21:50:49
+================================================================================
