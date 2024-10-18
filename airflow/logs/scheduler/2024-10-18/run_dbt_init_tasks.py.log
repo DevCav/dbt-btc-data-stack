@@ -10348,3 +10348,57 @@ In current version, it is optional. The decorator is applied automatically using
 [2024-10-18T21:42:19.175+0000] {logging_mixin.py:149} INFO - [2024-10-18T21:42:19.175+0000] {dag.py:2726} INFO - Sync 1 DAGs
 [2024-10-18T21:42:19.207+0000] {logging_mixin.py:149} INFO - [2024-10-18T21:42:19.207+0000] {dag.py:3486} INFO - Setting next_dagrun for run_dbt_init_tasks to None, run_after=None
 [2024-10-18T21:42:19.232+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/run_dbt_init_tasks.py took 0.152 seconds
+[2024-10-18T21:42:49.579+0000] {processor.py:157} INFO - Started process (PID=8105) to work on /opt/airflow/dags/run_dbt_init_tasks.py
+[2024-10-18T21:42:49.580+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/run_dbt_init_tasks.py for tasks to queue
+[2024-10-18T21:42:49.582+0000] {logging_mixin.py:149} INFO - [2024-10-18T21:42:49.581+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/run_dbt_init_tasks.py
+[2024-10-18T21:42:49.593+0000] {logging_mixin.py:149} WARNING - /home/airflow/.local/lib/python3.9/site-packages/airflow_dbt/hooks/dbt_hook.py:7 DeprecationWarning: The `airflow.hooks.base_hook.BaseHook` class is deprecated. Please use `'airflow.hooks.base.BaseHook'`.
+[2024-10-18T21:42:49.596+0000] {logging_mixin.py:149} WARNING - /home/airflow/.local/lib/python3.9/site-packages/airflow_dbt/operators/dbt_operator.py:6 RemovedInAirflow3Warning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2024-10-18T21:42:49.599+0000] {logging_mixin.py:149} WARNING - /home/airflow/.local/lib/python3.9/site-packages/airflow_dbt/operators/__init__.py:1 RemovedInAirflow3Warning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2024-10-18T21:42:49.612+0000] {processor.py:836} INFO - DAG(s) dict_keys(['run_dbt_init_tasks']) retrieved from /opt/airflow/dags/run_dbt_init_tasks.py
+[2024-10-18T21:42:49.651+0000] {logging_mixin.py:149} INFO - [2024-10-18T21:42:49.651+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-10-18T21:42:49.682+0000] {logging_mixin.py:149} INFO - [2024-10-18T21:42:49.682+0000] {dag.py:3486} INFO - Setting next_dagrun for run_dbt_init_tasks to None, run_after=None
+[2024-10-18T21:42:49.705+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/run_dbt_init_tasks.py took 0.131 seconds
+[2024-10-18T21:43:20.075+0000] {processor.py:157} INFO - Started process (PID=8130) to work on /opt/airflow/dags/run_dbt_init_tasks.py
+[2024-10-18T21:43:20.076+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/run_dbt_init_tasks.py for tasks to queue
+[2024-10-18T21:43:20.077+0000] {logging_mixin.py:149} INFO - [2024-10-18T21:43:20.077+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/run_dbt_init_tasks.py
+[2024-10-18T21:43:20.085+0000] {logging_mixin.py:149} WARNING - /home/airflow/.local/lib/python3.9/site-packages/airflow_dbt/hooks/dbt_hook.py:7 DeprecationWarning: The `airflow.hooks.base_hook.BaseHook` class is deprecated. Please use `'airflow.hooks.base.BaseHook'`.
+[2024-10-18T21:43:20.089+0000] {logging_mixin.py:149} WARNING - /home/airflow/.local/lib/python3.9/site-packages/airflow_dbt/operators/dbt_operator.py:6 RemovedInAirflow3Warning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2024-10-18T21:43:20.092+0000] {logging_mixin.py:149} WARNING - /home/airflow/.local/lib/python3.9/site-packages/airflow_dbt/operators/__init__.py:1 RemovedInAirflow3Warning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2024-10-18T21:43:20.107+0000] {processor.py:836} INFO - DAG(s) dict_keys(['run_dbt_init_tasks']) retrieved from /opt/airflow/dags/run_dbt_init_tasks.py
+[2024-10-18T21:43:20.157+0000] {logging_mixin.py:149} INFO - [2024-10-18T21:43:20.157+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-10-18T21:43:20.198+0000] {logging_mixin.py:149} INFO - [2024-10-18T21:43:20.197+0000] {dag.py:3486} INFO - Setting next_dagrun for run_dbt_init_tasks to None, run_after=None
+[2024-10-18T21:43:20.222+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/run_dbt_init_tasks.py took 0.152 seconds
+[2024-10-18T21:43:50.299+0000] {processor.py:157} INFO - Started process (PID=8147) to work on /opt/airflow/dags/run_dbt_init_tasks.py
+[2024-10-18T21:43:50.301+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/run_dbt_init_tasks.py for tasks to queue
+[2024-10-18T21:43:50.302+0000] {logging_mixin.py:149} INFO - [2024-10-18T21:43:50.302+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/run_dbt_init_tasks.py
+[2024-10-18T21:43:50.313+0000] {logging_mixin.py:149} WARNING - /home/airflow/.local/lib/python3.9/site-packages/airflow_dbt/hooks/dbt_hook.py:7 DeprecationWarning: The `airflow.hooks.base_hook.BaseHook` class is deprecated. Please use `'airflow.hooks.base.BaseHook'`.
+[2024-10-18T21:43:50.316+0000] {logging_mixin.py:149} WARNING - /home/airflow/.local/lib/python3.9/site-packages/airflow_dbt/operators/dbt_operator.py:6 RemovedInAirflow3Warning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2024-10-18T21:43:50.320+0000] {logging_mixin.py:149} WARNING - /home/airflow/.local/lib/python3.9/site-packages/airflow_dbt/operators/__init__.py:1 RemovedInAirflow3Warning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2024-10-18T21:43:50.334+0000] {processor.py:836} INFO - DAG(s) dict_keys(['run_dbt_init_tasks']) retrieved from /opt/airflow/dags/run_dbt_init_tasks.py
+[2024-10-18T21:43:50.378+0000] {logging_mixin.py:149} INFO - [2024-10-18T21:43:50.378+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-10-18T21:43:50.411+0000] {logging_mixin.py:149} INFO - [2024-10-18T21:43:50.411+0000] {dag.py:3486} INFO - Setting next_dagrun for run_dbt_init_tasks to None, run_after=None
+[2024-10-18T21:43:50.437+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/run_dbt_init_tasks.py took 0.143 seconds

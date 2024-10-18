@@ -2873,3 +2873,18 @@
 [2024-10-18T21:42:19.165+0000] {logging_mixin.py:149} INFO - [2024-10-18T21:42:19.164+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/custom_sensors.py
 [2024-10-18T21:42:19.172+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/custom_sensors.py
 [2024-10-18T21:42:19.195+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/custom_sensors.py took 0.039 seconds
+[2024-10-18T21:42:49.644+0000] {processor.py:157} INFO - Started process (PID=8107) to work on /opt/airflow/dags/custom_sensors.py
+[2024-10-18T21:42:49.645+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/custom_sensors.py for tasks to queue
+[2024-10-18T21:42:49.646+0000] {logging_mixin.py:149} INFO - [2024-10-18T21:42:49.646+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/custom_sensors.py
+[2024-10-18T21:42:49.651+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/custom_sensors.py
+[2024-10-18T21:42:49.673+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/custom_sensors.py took 0.033 seconds
+[2024-10-18T21:43:20.140+0000] {processor.py:157} INFO - Started process (PID=8132) to work on /opt/airflow/dags/custom_sensors.py
+[2024-10-18T21:43:20.142+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/custom_sensors.py for tasks to queue
+[2024-10-18T21:43:20.143+0000] {logging_mixin.py:149} INFO - [2024-10-18T21:43:20.143+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/custom_sensors.py
+[2024-10-18T21:43:20.148+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/custom_sensors.py
+[2024-10-18T21:43:20.175+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/custom_sensors.py took 0.039 seconds
+[2024-10-18T21:43:50.368+0000] {processor.py:157} INFO - Started process (PID=8149) to work on /opt/airflow/dags/custom_sensors.py
+[2024-10-18T21:43:50.370+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/custom_sensors.py for tasks to queue
+[2024-10-18T21:43:50.371+0000] {logging_mixin.py:149} INFO - [2024-10-18T21:43:50.370+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/custom_sensors.py
+[2024-10-18T21:43:50.375+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/custom_sensors.py
+[2024-10-18T21:43:50.398+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/custom_sensors.py took 0.035 seconds
