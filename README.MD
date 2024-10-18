@@ -256,4 +256,4 @@ If an analyst wants to view metrics like cumulative returns or the lowest maximu
 
 ### Sample Dashboard in Superset
 
-![alt text](https://file%2B.vscode-resource.vscode-cdn.net/Users/devincavagnaro/Documents/dev/dbt-btc-data-stack/Images/Sample%20Superset%20Dashboard.png?version%3D1729108102300)
+![alt text](https://file%2B.vscode-resource.vscode-cdn.net/Users/devincavagnaro/Documents/dev/dbt-btc-data-stack/Images/Sample%20Superset%20Dashboard.png?version%3D1729287740088)
