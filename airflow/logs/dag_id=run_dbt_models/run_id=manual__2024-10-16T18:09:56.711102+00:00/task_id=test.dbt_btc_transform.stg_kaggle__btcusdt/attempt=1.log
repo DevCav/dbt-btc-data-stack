@@ -1,0 +1,126 @@
+[2024-10-16T18:10:09.999+0000] {taskinstance.py:1037} DEBUG - previous_execution_date was called
+[2024-10-16T18:10:10.022+0000] {__init__.py:51} DEBUG - Loading core task runner: StandardTaskRunner
+[2024-10-16T18:10:10.038+0000] {taskinstance.py:1037} DEBUG - previous_execution_date was called
+[2024-10-16T18:10:10.045+0000] {base_task_runner.py:68} DEBUG - Planning to run as the  user
+[2024-10-16T18:10:10.048+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: run_dbt_models.test.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-16T18:09:56.711102+00:00 [queued]> from DB
+[2024-10-16T18:10:10.068+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: run_dbt_models.test.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-16T18:09:56.711102+00:00 [queued]> dependency 'Task Instance State' PASSED: True, Task state queued was valid.
+[2024-10-16T18:10:10.073+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: run_dbt_models.test.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-16T18:09:56.711102+00:00 [queued]> dependency 'Previous Dagrun State' PASSED: True, This task instance was the first task instance for its task.
+[2024-10-16T18:10:10.073+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: run_dbt_models.test.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-16T18:09:56.711102+00:00 [queued]> dependency 'Task Instance Not Running' PASSED: True, Task is not in running state.
+[2024-10-16T18:10:10.084+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: run_dbt_models.test.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-16T18:09:56.711102+00:00 [queued]> dependency 'Not In Retry Period' PASSED: True, The task instance was not marked for retrying.
+[2024-10-16T18:10:10.085+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: run_dbt_models.test.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-16T18:09:56.711102+00:00 [queued]>
+[2024-10-16T18:10:10.085+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: run_dbt_models.test.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-16T18:09:56.711102+00:00 [queued]> dependency 'Task Concurrency' PASSED: True, Task concurrency is not set.
+[2024-10-16T18:10:10.087+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: run_dbt_models.test.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-16T18:09:56.711102+00:00 [queued]> dependency 'Previous Dagrun State' PASSED: True, This task instance was the first task instance for its task.
+[2024-10-16T18:10:10.092+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: run_dbt_models.test.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-16T18:09:56.711102+00:00 [queued]> dependency 'Not In Retry Period' PASSED: True, The task instance was not marked for retrying.
+[2024-10-16T18:10:10.097+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: run_dbt_models.test.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-16T18:09:56.711102+00:00 [queued]> dependency 'Pool Slots Available' PASSED: True, There are enough open slots in default_pool to execute the task
+[2024-10-16T18:10:10.097+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: run_dbt_models.test.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-16T18:09:56.711102+00:00 [queued]>
+[2024-10-16T18:10:10.097+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 2
+[2024-10-16T18:10:10.109+0000] {taskinstance.py:1327} INFO - Executing <Task(BashOperator): test.dbt_btc_transform.stg_kaggle__btcusdt> on 2024-10-16 18:09:56.711102+00:00
+[2024-10-16T18:10:10.113+0000] {standard_task_runner.py:57} INFO - Started process 1122 to run task
+[2024-10-16T18:10:10.116+0000] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'run_dbt_models', 'test.dbt_btc_transform.stg_kaggle__btcusdt', 'manual__2024-10-16T18:09:56.711102+00:00', '--job-id', '73', '--raw', '--subdir', 'DAGS_FOLDER/run_dbt_models.py', '--cfg-path', '/tmp/tmplkxp01hv']
+[2024-10-16T18:10:10.117+0000] {standard_task_runner.py:85} INFO - Job 73: Subtask test.dbt_btc_transform.stg_kaggle__btcusdt
+[2024-10-16T18:10:10.118+0000] {cli_action_loggers.py:65} DEBUG - Calling callbacks: [<function default_action_log at 0x7f7ca9505550>]
+[2024-10-16T18:10:10.175+0000] {taskinstance.py:1037} DEBUG - previous_execution_date was called
+[2024-10-16T18:10:10.187+0000] {task_command.py:410} INFO - Running <TaskInstance: run_dbt_models.test.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-16T18:09:56.711102+00:00 [running]> on host 888d2c584607
+[2024-10-16T18:10:10.187+0000] {settings.py:353} DEBUG - Disposing DB connection pool (PID 1122)
+[2024-10-16T18:10:10.188+0000] {settings.py:212} DEBUG - Setting up DB connection pool (PID 1122)
+[2024-10-16T18:10:10.188+0000] {settings.py:285} DEBUG - settings.prepare_engine_args(): Using NullPool
+[2024-10-16T18:10:10.191+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: run_dbt_models.test.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-16T18:09:56.711102+00:00 [running]> from DB
+[2024-10-16T18:10:10.259+0000] {taskinstance.py:1037} DEBUG - previous_execution_date was called
+[2024-10-16T18:10:10.270+0000] {taskinstance.py:868} DEBUG - Clearing XCom data
+[2024-10-16T18:10:10.309+0000] {retries.py:80} DEBUG - Running RenderedTaskInstanceFields._do_delete_old_records with retries. Try 1 of 3
+[2024-10-16T18:10:10.324+0000] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='airflow@example.com' AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='run_dbt_models' AIRFLOW_CTX_TASK_ID='test.dbt_btc_transform.stg_kaggle__btcusdt' AIRFLOW_CTX_EXECUTION_DATE='2024-10-16T18:09:56.711102+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-10-16T18:09:56.711102+00:00'
+[2024-10-16T18:10:10.325+0000] {__init__.py:117} DEBUG - Preparing lineage inlets and outlets
+[2024-10-16T18:10:10.325+0000] {__init__.py:155} DEBUG - inlets: [], outlets: []
+[2024-10-16T18:10:10.326+0000] {bash.py:186} DEBUG - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='airflow@example.com' AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='run_dbt_models' AIRFLOW_CTX_TASK_ID='test.dbt_btc_transform.stg_kaggle__btcusdt' AIRFLOW_CTX_EXECUTION_DATE='2024-10-16T18:09:56.711102+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-10-16T18:09:56.711102+00:00'
+[2024-10-16T18:10:10.326+0000] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2024-10-16T18:10:10.327+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', '\n            export DBT_SCHEMA=analytics &&\n            cd /opt/airflow/dbt &&\n            /home/airflow/.local/bin/dbt --no-write-json test --target dev --models stg_kaggle__btcusdt\n            ']
+[2024-10-16T18:10:10.336+0000] {subprocess.py:86} INFO - Output:
+[2024-10-16T18:10:12.454+0000] {subprocess.py:93} INFO - [0m18:10:12  Running with dbt=1.8.7
+[2024-10-16T18:10:12.748+0000] {subprocess.py:93} INFO - [0m18:10:12  Registered adapter: ***=1.8.2
+[2024-10-16T18:10:13.124+0000] {subprocess.py:93} INFO - [0m18:10:13  Found 2 models, 18 data tests, 1 source, 540 macros
+[2024-10-16T18:10:13.128+0000] {subprocess.py:93} INFO - [0m18:10:13
+[2024-10-16T18:10:13.299+0000] {subprocess.py:93} INFO - [0m18:10:13  Concurrency: 4 threads (target='dev')
+[2024-10-16T18:10:13.300+0000] {subprocess.py:93} INFO - [0m18:10:13
+[2024-10-16T18:10:13.312+0000] {subprocess.py:93} INFO - [0m18:10:13  1 of 18 START test accepted_values_stg_kaggle__btcusdt_hour_end__True__False ... [RUN]
+[2024-10-16T18:10:13.314+0000] {subprocess.py:93} INFO - [0m18:10:13  2 of 18 START test accepted_values_stg_kaggle__btcusdt_hour_start__True__False . [RUN]
+[2024-10-16T18:10:13.315+0000] {subprocess.py:93} INFO - [0m18:10:13  3 of 18 START test not_null_stg_kaggle__btcusdt_close .......................... [RUN]
+[2024-10-16T18:10:13.316+0000] {subprocess.py:93} INFO - [0m18:10:13  4 of 18 START test not_null_stg_kaggle__btcusdt_close_time ..................... [RUN]
+[2024-10-16T18:10:13.616+0000] {subprocess.py:93} INFO - [0m18:10:13  3 of 18 PASS not_null_stg_kaggle__btcusdt_close ................................ [[32mPASS[0m in 0.30s]
+[2024-10-16T18:10:13.618+0000] {subprocess.py:93} INFO - [0m18:10:13  2 of 18 PASS accepted_values_stg_kaggle__btcusdt_hour_start__True__False ....... [[32mPASS[0m in 0.30s]
+[2024-10-16T18:10:13.619+0000] {subprocess.py:93} INFO - [0m18:10:13  1 of 18 PASS accepted_values_stg_kaggle__btcusdt_hour_end__True__False ......... [[32mPASS[0m in 0.30s]
+[2024-10-16T18:10:13.621+0000] {subprocess.py:93} INFO - [0m18:10:13  4 of 18 PASS not_null_stg_kaggle__btcusdt_close_time ........................... [[32mPASS[0m in 0.30s]
+[2024-10-16T18:10:13.631+0000] {subprocess.py:93} INFO - [0m18:10:13  5 of 18 START test not_null_stg_kaggle__btcusdt_high ........................... [RUN]
+[2024-10-16T18:10:13.632+0000] {subprocess.py:93} INFO - [0m18:10:13  6 of 18 START test not_null_stg_kaggle__btcusdt_hour_end ....................... [RUN]
+[2024-10-16T18:10:13.634+0000] {subprocess.py:93} INFO - [0m18:10:13  7 of 18 START test not_null_stg_kaggle__btcusdt_hour_start ..................... [RUN]
+[2024-10-16T18:10:13.635+0000] {subprocess.py:93} INFO - [0m18:10:13  8 of 18 START test not_null_stg_kaggle__btcusdt_low ............................ [RUN]
+[2024-10-16T18:10:13.790+0000] {subprocess.py:93} INFO - [0m18:10:13  5 of 18 PASS not_null_stg_kaggle__btcusdt_high ................................. [[32mPASS[0m in 0.15s]
+[2024-10-16T18:10:13.795+0000] {subprocess.py:93} INFO - [0m18:10:13  9 of 18 START test not_null_stg_kaggle__btcusdt_number_of_trades ............... [RUN]
+[2024-10-16T18:10:13.829+0000] {subprocess.py:93} INFO - [0m18:10:13  6 of 18 PASS not_null_stg_kaggle__btcusdt_hour_end ............................. [[32mPASS[0m in 0.19s]
+[2024-10-16T18:10:13.837+0000] {subprocess.py:93} INFO - [0m18:10:13  7 of 18 PASS not_null_stg_kaggle__btcusdt_hour_start ........................... [[32mPASS[0m in 0.20s]
+[2024-10-16T18:10:13.840+0000] {subprocess.py:93} INFO - [0m18:10:13  8 of 18 PASS not_null_stg_kaggle__btcusdt_low .................................. [[32mPASS[0m in 0.20s]
+[2024-10-16T18:10:13.847+0000] {subprocess.py:93} INFO - [0m18:10:13  10 of 18 START test not_null_stg_kaggle__btcusdt_open .......................... [RUN]
+[2024-10-16T18:10:13.853+0000] {subprocess.py:93} INFO - [0m18:10:13  11 of 18 START test not_null_stg_kaggle__btcusdt_open_date ..................... [RUN]
+[2024-10-16T18:10:13.855+0000] {subprocess.py:93} INFO - [0m18:10:13  12 of 18 START test not_null_stg_kaggle__btcusdt_open_time ..................... [RUN]
+[2024-10-16T18:10:13.975+0000] {subprocess.py:93} INFO - [0m18:10:13  9 of 18 PASS not_null_stg_kaggle__btcusdt_number_of_trades ..................... [[32mPASS[0m in 0.18s]
+[2024-10-16T18:10:13.981+0000] {subprocess.py:93} INFO - [0m18:10:13  13 of 18 START test not_null_stg_kaggle__btcusdt_quote_asset_volume ............ [RUN]
+[2024-10-16T18:10:14.015+0000] {subprocess.py:93} INFO - [0m18:10:14  10 of 18 PASS not_null_stg_kaggle__btcusdt_open ................................ [[32mPASS[0m in 0.16s]
+[2024-10-16T18:10:14.027+0000] {subprocess.py:93} INFO - [0m18:10:14  14 of 18 START test not_null_stg_kaggle__btcusdt_taker_buy_base_asset_volume ... [RUN]
+[2024-10-16T18:10:14.052+0000] {subprocess.py:93} INFO - [0m18:10:14  11 of 18 PASS not_null_stg_kaggle__btcusdt_open_date ........................... [[32mPASS[0m in 0.19s]
+[2024-10-16T18:10:14.056+0000] {subprocess.py:93} INFO - [0m18:10:14  12 of 18 PASS not_null_stg_kaggle__btcusdt_open_time ........................... [[32mPASS[0m in 0.20s]
+[2024-10-16T18:10:14.071+0000] {subprocess.py:93} INFO - [0m18:10:14  15 of 18 START test not_null_stg_kaggle__btcusdt_taker_buy_quote_asset_volume .. [RUN]
+[2024-10-16T18:10:14.074+0000] {subprocess.py:93} INFO - [0m18:10:14  16 of 18 START test not_null_stg_kaggle__btcusdt_volume ........................ [RUN]
+[2024-10-16T18:10:14.127+0000] {subprocess.py:93} INFO - [0m18:10:14  13 of 18 PASS not_null_stg_kaggle__btcusdt_quote_asset_volume .................. [[32mPASS[0m in 0.14s]
+[2024-10-16T18:10:14.137+0000] {subprocess.py:93} INFO - [0m18:10:14  17 of 18 START test unique_stg_kaggle__btcusdt_close_time ...................... [RUN]
+[2024-10-16T18:10:14.174+0000] {subprocess.py:93} INFO - [0m18:10:14  14 of 18 PASS not_null_stg_kaggle__btcusdt_taker_buy_base_asset_volume ......... [[32mPASS[0m in 0.14s]
+[2024-10-16T18:10:14.183+0000] {subprocess.py:93} INFO - [0m18:10:14  18 of 18 START test unique_stg_kaggle__btcusdt_open_time ....................... [RUN]
+[2024-10-16T18:10:14.242+0000] {subprocess.py:93} INFO - [0m18:10:14  16 of 18 PASS not_null_stg_kaggle__btcusdt_volume .............................. [[32mPASS[0m in 0.16s]
+[2024-10-16T18:10:14.249+0000] {subprocess.py:93} INFO - [0m18:10:14  15 of 18 PASS not_null_stg_kaggle__btcusdt_taker_buy_quote_asset_volume ........ [[32mPASS[0m in 0.17s]
+[2024-10-16T18:10:15.132+0000] {subprocess.py:93} INFO - [0m18:10:15  17 of 18 FAIL 8 unique_stg_kaggle__btcusdt_close_time .......................... [[31mFAIL 8[0m in 0.99s]
+[2024-10-16T18:10:15.152+0000] {subprocess.py:93} INFO - [0m18:10:15  18 of 18 FAIL 8 unique_stg_kaggle__btcusdt_open_time ........................... [[31mFAIL 8[0m in 0.96s]
+[2024-10-16T18:10:15.159+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: run_dbt_models.test.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-16T18:09:56.711102+00:00 [running]> from DB
+[2024-10-16T18:10:15.178+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-16T18:10:15.181+0000] {subprocess.py:93} INFO - [0m18:10:15
+[2024-10-16T18:10:15.183+0000] {subprocess.py:93} INFO - [0m18:10:15  Finished running 18 data tests in 0 hours 0 minutes and 2.05 seconds (2.05s).
+[2024-10-16T18:10:15.189+0000] {subprocess.py:93} INFO - [0m18:10:15
+[2024-10-16T18:10:15.190+0000] {subprocess.py:93} INFO - [0m18:10:15  [31mCompleted with 2 errors and 0 warnings:[0m
+[2024-10-16T18:10:15.191+0000] {subprocess.py:93} INFO - [0m18:10:15
+[2024-10-16T18:10:15.192+0000] {subprocess.py:93} INFO - [0m18:10:15  [31mFailure in test unique_stg_kaggle__btcusdt_close_time (models/staging/kaggle/docs/stg_kaggle__btcusdt.yml)[0m
+[2024-10-16T18:10:15.193+0000] {subprocess.py:93} INFO - [0m18:10:15    Got 8 results, configured to fail if != 0
+[2024-10-16T18:10:15.194+0000] {subprocess.py:93} INFO - [0m18:10:15
+[2024-10-16T18:10:15.195+0000] {subprocess.py:93} INFO - [0m18:10:15    compiled code at target/compiled/dbt_btc_transform/models/staging/kaggle/docs/stg_kaggle__btcusdt.yml/unique_stg_kaggle__btcusdt_close_time.sql
+[2024-10-16T18:10:15.196+0000] {subprocess.py:93} INFO - [0m18:10:15
+[2024-10-16T18:10:15.197+0000] {subprocess.py:93} INFO - [0m18:10:15  [31mFailure in test unique_stg_kaggle__btcusdt_open_time (models/staging/kaggle/docs/stg_kaggle__btcusdt.yml)[0m
+[2024-10-16T18:10:15.198+0000] {subprocess.py:93} INFO - [0m18:10:15    Got 8 results, configured to fail if != 0
+[2024-10-16T18:10:15.199+0000] {subprocess.py:93} INFO - [0m18:10:15
+[2024-10-16T18:10:15.200+0000] {subprocess.py:93} INFO - [0m18:10:15    compiled code at target/compiled/dbt_btc_transform/models/staging/kaggle/docs/stg_kaggle__btcusdt.yml/unique_stg_kaggle__btcusdt_open_time.sql
+[2024-10-16T18:10:15.201+0000] {subprocess.py:93} INFO - [0m18:10:15
+[2024-10-16T18:10:15.202+0000] {subprocess.py:93} INFO - [0m18:10:15  Done. PASS=16 WARN=0 ERROR=2 SKIP=0 TOTAL=18
+[2024-10-16T18:10:15.844+0000] {subprocess.py:97} INFO - Command exited with return code 1
+[2024-10-16T18:10:15.845+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: run_dbt_models.test.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-16T18:09:56.711102+00:00 [running]> from DB
+[2024-10-16T18:10:15.862+0000] {taskinstance.py:1824} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/bash.py", line 210, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2024-10-16T18:10:15.863+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: run_dbt_models.test.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-16T18:09:56.711102+00:00 [running]> from DB
+[2024-10-16T18:10:15.866+0000] {taskinstance.py:2305} DEBUG - Task Duration set to 5.781139
+[2024-10-16T18:10:15.869+0000] {taskinstance.py:1356} DEBUG - Clearing next_method and next_kwargs.
+[2024-10-16T18:10:15.869+0000] {taskinstance.py:1345} INFO - Marking task as UP_FOR_RETRY. dag_id=run_dbt_models, task_id=test.dbt_btc_transform.stg_kaggle__btcusdt, execution_date=20241016T180956, start_date=20241016T181010, end_date=20241016T181015
+[2024-10-16T18:10:15.885+0000] {cli_action_loggers.py:83} DEBUG - Calling callbacks: []
+[2024-10-16T18:10:15.885+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 73 for task test.dbt_btc_transform.stg_kaggle__btcusdt (Bash command failed. The command returned a non-zero exit code 1.; 1122)
+[2024-10-16T18:10:15.933+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 1
+[2024-10-16T18:10:15.992+0000] {dagrun.py:697} DEBUG - number of tis tasks for <DagRun run_dbt_models @ 2024-10-16 18:09:56.711102+00:00: manual__2024-10-16T18:09:56.711102+00:00, state:running, queued_at: 2024-10-16 18:09:56.723144+00:00. externally triggered: True>: 5 task(s)
+[2024-10-16T18:10:15.993+0000] {dagrun.py:718} DEBUG - number of scheduleable tasks for <DagRun run_dbt_models @ 2024-10-16 18:09:56.711102+00:00: manual__2024-10-16T18:09:56.711102+00:00, state:running, queued_at: 2024-10-16 18:09:56.723144+00:00. externally triggered: True>: 3 task(s)
+[2024-10-16T18:10:15.994+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: run_dbt_models.test.dbt_btc_transform.int_hourly_trades manual__2024-10-16T18:09:56.711102+00:00 [None]> dependency 'Previous Dagrun State' PASSED: True, This task instance was the first task instance for its task.
+[2024-10-16T18:10:15.995+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: run_dbt_models.test.dbt_btc_transform.int_hourly_trades manual__2024-10-16T18:09:56.711102+00:00 [None]> dependency 'Not In Retry Period' PASSED: True, The task instance was not marked for retrying.
+[2024-10-16T18:10:15.995+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: run_dbt_models.test.dbt_btc_transform.int_hourly_trades manual__2024-10-16T18:09:56.711102+00:00 [None]> dependency 'Trigger Rule' PASSED: False, Task's trigger rule 'all_success' requires all upstream tasks to have succeeded, but found 1 non-success(es). upstream_states=_UpstreamTIStates(success=0, skipped=0, failed=0, upstream_failed=0, removed=0, done=0), upstream_task_ids={'model.dbt_btc_transform.int_hourly_trades'}
+[2024-10-16T18:10:15.996+0000] {taskinstance.py:1093} DEBUG - Dependencies not met for <TaskInstance: run_dbt_models.test.dbt_btc_transform.int_hourly_trades manual__2024-10-16T18:09:56.711102+00:00 [None]>, dependency 'Trigger Rule' FAILED: Task's trigger rule 'all_success' requires all upstream tasks to have succeeded, but found 1 non-success(es). upstream_states=_UpstreamTIStates(success=0, skipped=0, failed=0, upstream_failed=0, removed=0, done=0), upstream_task_ids={'model.dbt_btc_transform.int_hourly_trades'}
+[2024-10-16T18:10:15.997+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: run_dbt_models.generate_dbt_docs manual__2024-10-16T18:09:56.711102+00:00 [None]> dependency 'Previous Dagrun State' PASSED: True, This task instance was the first task instance for its task.
+[2024-10-16T18:10:15.997+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: run_dbt_models.generate_dbt_docs manual__2024-10-16T18:09:56.711102+00:00 [None]> dependency 'Not In Retry Period' PASSED: True, The task instance was not marked for retrying.
+[2024-10-16T18:10:15.998+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: run_dbt_models.generate_dbt_docs manual__2024-10-16T18:09:56.711102+00:00 [None]> dependency 'Trigger Rule' PASSED: False, Task's trigger rule 'all_success' requires all upstream tasks to have succeeded, but found 3 non-success(es). upstream_states=_UpstreamTIStates(success=1, skipped=0, failed=0, upstream_failed=0, removed=0, done=1), upstream_task_ids={'test.dbt_btc_transform.int_hourly_trades', 'model.dbt_btc_transform.stg_kaggle__btcusdt', 'model.dbt_btc_transform.int_hourly_trades', 'test.dbt_btc_transform.stg_kaggle__btcusdt'}
+[2024-10-16T18:10:15.998+0000] {taskinstance.py:1093} DEBUG - Dependencies not met for <TaskInstance: run_dbt_models.generate_dbt_docs manual__2024-10-16T18:09:56.711102+00:00 [None]>, dependency 'Trigger Rule' FAILED: Task's trigger rule 'all_success' requires all upstream tasks to have succeeded, but found 3 non-success(es). upstream_states=_UpstreamTIStates(success=1, skipped=0, failed=0, upstream_failed=0, removed=0, done=1), upstream_task_ids={'test.dbt_btc_transform.int_hourly_trades', 'model.dbt_btc_transform.stg_kaggle__btcusdt', 'model.dbt_btc_transform.int_hourly_trades', 'test.dbt_btc_transform.stg_kaggle__btcusdt'}
+[2024-10-16T18:10:15.999+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: run_dbt_models.test.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-16T18:09:56.711102+00:00 [up_for_retry]> dependency 'Previous Dagrun State' PASSED: True, This task instance was the first task instance for its task.
+[2024-10-16T18:10:16.000+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: run_dbt_models.test.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-16T18:09:56.711102+00:00 [up_for_retry]> dependency 'Not In Retry Period' PASSED: False, Task is not ready for retry yet but will be retried automatically. Current date is 2024-10-16T18:10:16.000216+00:00 and task will be retried at 2024-10-16T18:15:15.866500+00:00.
+[2024-10-16T18:10:16.000+0000] {taskinstance.py:1093} DEBUG - Dependencies not met for <TaskInstance: run_dbt_models.test.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-16T18:09:56.711102+00:00 [up_for_retry]>, dependency 'Not In Retry Period' FAILED: Task is not ready for retry yet but will be retried automatically. Current date is 2024-10-16T18:10:16.000216+00:00 and task will be retried at 2024-10-16T18:15:15.866500+00:00.
+[2024-10-16T18:10:16.005+0000] {taskinstance.py:2651} INFO - 0 downstream tasks scheduled from follow-on schedule check

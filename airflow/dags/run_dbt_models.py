@@ -17,7 +17,8 @@ default_args = {
     'email_on_failure': False,
     'email_on_retry': False,
     'retries': 1,
-    'retry_delay': timedelta(minutes=5)
+    'retry_delay': timedelta(minutes=5),
+    'start_date': days_ago(1),
 }
 
 dag = DAG(
@@ -47,7 +48,7 @@ generate_dbt_docs = BashOperator(
     dag=dag,
 )
 
-models_to_run = ['stg_kaggle__btcusdt']  # Specify the models to run for this DAG
+models_to_run = ['stg_kaggle__btcusdt', 'fct_hourly_trades']  # Specify the models to run for this DAG
 schema = 'analytics'
 
 dbt_tasks = create_dbt_tasks(dag, models_to_run, schema)

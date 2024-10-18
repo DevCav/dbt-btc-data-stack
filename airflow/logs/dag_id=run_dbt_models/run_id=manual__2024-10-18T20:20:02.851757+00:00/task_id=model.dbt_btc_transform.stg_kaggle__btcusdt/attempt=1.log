@@ -1,0 +1,227 @@
+[2024-10-18T20:20:08.381+0000] {taskinstance.py:1037} DEBUG - previous_execution_date was called
+[2024-10-18T20:20:08.414+0000] {__init__.py:51} DEBUG - Loading core task runner: StandardTaskRunner
+[2024-10-18T20:20:08.436+0000] {taskinstance.py:1037} DEBUG - previous_execution_date was called
+[2024-10-18T20:20:08.449+0000] {base_task_runner.py:68} DEBUG - Planning to run as the  user
+[2024-10-18T20:20:08.453+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: run_dbt_models.model.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-18T20:20:02.851757+00:00 [queued]> from DB
+[2024-10-18T20:20:08.502+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: run_dbt_models.model.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-18T20:20:02.851757+00:00 [queued]> dependency 'Task Instance Not Running' PASSED: True, Task is not in running state.
+[2024-10-18T20:20:08.506+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: run_dbt_models.model.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-18T20:20:02.851757+00:00 [queued]> dependency 'Previous Dagrun State' PASSED: True, This task instance was the first task instance for its task.
+[2024-10-18T20:20:08.507+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: run_dbt_models.model.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-18T20:20:02.851757+00:00 [queued]> dependency 'Not In Retry Period' PASSED: True, The task instance was not marked for retrying.
+[2024-10-18T20:20:08.507+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: run_dbt_models.model.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-18T20:20:02.851757+00:00 [queued]> dependency 'Task Instance State' PASSED: True, Task state queued was valid.
+[2024-10-18T20:20:08.509+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: run_dbt_models.model.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-18T20:20:02.851757+00:00 [queued]>
+[2024-10-18T20:20:08.516+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: run_dbt_models.model.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-18T20:20:02.851757+00:00 [queued]> dependency 'Previous Dagrun State' PASSED: True, This task instance was the first task instance for its task.
+[2024-10-18T20:20:08.516+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: run_dbt_models.model.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-18T20:20:02.851757+00:00 [queued]> dependency 'Task Concurrency' PASSED: True, Task concurrency is not set.
+[2024-10-18T20:20:08.524+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: run_dbt_models.model.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-18T20:20:02.851757+00:00 [queued]> dependency 'Pool Slots Available' PASSED: True, There are enough open slots in default_pool to execute the task
+[2024-10-18T20:20:08.527+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: run_dbt_models.model.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-18T20:20:02.851757+00:00 [queued]> dependency 'Not In Retry Period' PASSED: True, The task instance was not marked for retrying.
+[2024-10-18T20:20:08.527+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: run_dbt_models.model.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-18T20:20:02.851757+00:00 [queued]>
+[2024-10-18T20:20:08.528+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 2
+[2024-10-18T20:20:08.547+0000] {taskinstance.py:1327} INFO - Executing <Task(BashOperator): model.dbt_btc_transform.stg_kaggle__btcusdt> on 2024-10-18 20:20:02.851757+00:00
+[2024-10-18T20:20:08.551+0000] {standard_task_runner.py:57} INFO - Started process 1291 to run task
+[2024-10-18T20:20:08.556+0000] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'run_dbt_models', 'model.dbt_btc_transform.stg_kaggle__btcusdt', 'manual__2024-10-18T20:20:02.851757+00:00', '--job-id', '168', '--raw', '--subdir', 'DAGS_FOLDER/run_dbt_models.py', '--cfg-path', '/tmp/tmprer0_scn']
+[2024-10-18T20:20:08.557+0000] {standard_task_runner.py:85} INFO - Job 168: Subtask model.dbt_btc_transform.stg_kaggle__btcusdt
+[2024-10-18T20:20:08.558+0000] {cli_action_loggers.py:65} DEBUG - Calling callbacks: [<function default_action_log at 0x7fb8145ae550>]
+[2024-10-18T20:20:08.637+0000] {taskinstance.py:1037} DEBUG - previous_execution_date was called
+[2024-10-18T20:20:08.647+0000] {task_command.py:410} INFO - Running <TaskInstance: run_dbt_models.model.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-18T20:20:02.851757+00:00 [running]> on host cd6dcf6990b1
+[2024-10-18T20:20:08.648+0000] {settings.py:353} DEBUG - Disposing DB connection pool (PID 1291)
+[2024-10-18T20:20:08.648+0000] {settings.py:212} DEBUG - Setting up DB connection pool (PID 1291)
+[2024-10-18T20:20:08.649+0000] {settings.py:285} DEBUG - settings.prepare_engine_args(): Using NullPool
+[2024-10-18T20:20:08.651+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: run_dbt_models.model.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-18T20:20:02.851757+00:00 [running]> from DB
+[2024-10-18T20:20:08.704+0000] {taskinstance.py:1037} DEBUG - previous_execution_date was called
+[2024-10-18T20:20:08.713+0000] {taskinstance.py:868} DEBUG - Clearing XCom data
+[2024-10-18T20:20:08.756+0000] {retries.py:80} DEBUG - Running RenderedTaskInstanceFields._do_delete_old_records with retries. Try 1 of 3
+[2024-10-18T20:20:08.773+0000] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='airflow@example.com' AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='run_dbt_models' AIRFLOW_CTX_TASK_ID='model.dbt_btc_transform.stg_kaggle__btcusdt' AIRFLOW_CTX_EXECUTION_DATE='2024-10-18T20:20:02.851757+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-10-18T20:20:02.851757+00:00'
+[2024-10-18T20:20:08.773+0000] {__init__.py:117} DEBUG - Preparing lineage inlets and outlets
+[2024-10-18T20:20:08.774+0000] {__init__.py:155} DEBUG - inlets: [], outlets: []
+[2024-10-18T20:20:08.783+0000] {bash.py:186} DEBUG - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='airflow@example.com' AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='run_dbt_models' AIRFLOW_CTX_TASK_ID='model.dbt_btc_transform.stg_kaggle__btcusdt' AIRFLOW_CTX_EXECUTION_DATE='2024-10-18T20:20:02.851757+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-10-18T20:20:02.851757+00:00'
+[2024-10-18T20:20:08.785+0000] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2024-10-18T20:20:08.788+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', '\n            export DBT_SCHEMA=analytics &&\n            cd /opt/airflow/dbt &&\n            /home/airflow/.local/bin/dbt --no-write-json run --target dev --models stg_kaggle__btcusdt\n            ']
+[2024-10-18T20:20:08.803+0000] {subprocess.py:86} INFO - Output:
+[2024-10-18T20:20:12.255+0000] {subprocess.py:93} INFO - [0m20:20:12  Running with dbt=1.8.7
+[2024-10-18T20:20:12.859+0000] {subprocess.py:93} INFO - [0m20:20:12  Registered adapter: ***=1.8.2
+[2024-10-18T20:20:13.076+0000] {subprocess.py:93} INFO - [0m20:20:13  Unable to do partial parsing because config vars, config profile, or config target have changed
+[2024-10-18T20:20:13.079+0000] {subprocess.py:93} INFO - [0m20:20:13  Unable to do partial parsing because profile has changed
+[2024-10-18T20:20:13.595+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: run_dbt_models.model.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-18T20:20:02.851757+00:00 [running]> from DB
+[2024-10-18T20:20:13.620+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-18T20:20:15.295+0000] {subprocess.py:93} INFO - [0m20:20:15  [[33mWARNING[0m]: Deprecated functionality
+[2024-10-18T20:20:15.296+0000] {subprocess.py:93} INFO - The `tests` config has been renamed to `data_tests`. Please see
+[2024-10-18T20:20:15.296+0000] {subprocess.py:93} INFO - https://docs.getdbt.com/docs/build/data-tests#new-data_tests-syntax for more
+[2024-10-18T20:20:15.297+0000] {subprocess.py:93} INFO - information.
+[2024-10-18T20:20:15.787+0000] {subprocess.py:93} INFO - [0m20:20:15  Found 2 models, 25 data tests, 1 source, 540 macros
+[2024-10-18T20:20:15.791+0000] {subprocess.py:93} INFO - [0m20:20:15
+[2024-10-18T20:20:15.991+0000] {subprocess.py:93} INFO - [0m20:20:15  Concurrency: 4 threads (target='dev')
+[2024-10-18T20:20:15.992+0000] {subprocess.py:93} INFO - [0m20:20:15
+[2024-10-18T20:20:16.003+0000] {subprocess.py:93} INFO - [0m20:20:16  1 of 1 START sql table model analytics.stg_kaggle__btcusdt ..................... [RUN]
+[2024-10-18T20:20:18.676+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: run_dbt_models.model.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-18T20:20:02.851757+00:00 [running]> from DB
+[2024-10-18T20:20:18.704+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-18T20:20:23.830+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: run_dbt_models.model.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-18T20:20:02.851757+00:00 [running]> from DB
+[2024-10-18T20:20:23.892+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-18T20:20:28.916+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: run_dbt_models.model.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-18T20:20:02.851757+00:00 [running]> from DB
+[2024-10-18T20:20:28.934+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-18T20:20:34.020+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: run_dbt_models.model.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-18T20:20:02.851757+00:00 [running]> from DB
+[2024-10-18T20:20:34.046+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-18T20:20:39.081+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: run_dbt_models.model.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-18T20:20:02.851757+00:00 [running]> from DB
+[2024-10-18T20:20:39.105+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-18T20:20:44.157+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: run_dbt_models.model.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-18T20:20:02.851757+00:00 [running]> from DB
+[2024-10-18T20:20:44.178+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-18T20:20:49.385+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: run_dbt_models.model.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-18T20:20:02.851757+00:00 [running]> from DB
+[2024-10-18T20:20:49.457+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-18T20:20:54.493+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: run_dbt_models.model.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-18T20:20:02.851757+00:00 [running]> from DB
+[2024-10-18T20:20:54.514+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-18T20:20:59.550+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: run_dbt_models.model.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-18T20:20:02.851757+00:00 [running]> from DB
+[2024-10-18T20:20:59.567+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-18T20:21:04.613+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: run_dbt_models.model.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-18T20:20:02.851757+00:00 [running]> from DB
+[2024-10-18T20:21:04.633+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-18T20:21:09.658+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: run_dbt_models.model.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-18T20:20:02.851757+00:00 [running]> from DB
+[2024-10-18T20:21:09.681+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-18T20:21:14.728+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: run_dbt_models.model.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-18T20:20:02.851757+00:00 [running]> from DB
+[2024-10-18T20:21:14.746+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-18T20:21:19.810+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: run_dbt_models.model.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-18T20:20:02.851757+00:00 [running]> from DB
+[2024-10-18T20:21:19.827+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-18T20:21:24.867+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: run_dbt_models.model.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-18T20:20:02.851757+00:00 [running]> from DB
+[2024-10-18T20:21:24.884+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-18T20:21:29.919+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: run_dbt_models.model.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-18T20:20:02.851757+00:00 [running]> from DB
+[2024-10-18T20:21:29.936+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-18T20:21:35.189+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: run_dbt_models.model.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-18T20:20:02.851757+00:00 [running]> from DB
+[2024-10-18T20:21:35.250+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-18T20:21:40.306+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: run_dbt_models.model.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-18T20:20:02.851757+00:00 [running]> from DB
+[2024-10-18T20:21:40.328+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-18T20:21:45.361+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: run_dbt_models.model.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-18T20:20:02.851757+00:00 [running]> from DB
+[2024-10-18T20:21:45.376+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-18T20:21:50.422+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: run_dbt_models.model.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-18T20:20:02.851757+00:00 [running]> from DB
+[2024-10-18T20:21:50.441+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-18T20:21:55.508+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: run_dbt_models.model.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-18T20:20:02.851757+00:00 [running]> from DB
+[2024-10-18T20:21:55.539+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-18T20:22:00.671+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: run_dbt_models.model.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-18T20:20:02.851757+00:00 [running]> from DB
+[2024-10-18T20:22:00.795+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-18T20:22:05.909+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: run_dbt_models.model.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-18T20:20:02.851757+00:00 [running]> from DB
+[2024-10-18T20:22:05.982+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-18T20:22:11.023+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: run_dbt_models.model.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-18T20:20:02.851757+00:00 [running]> from DB
+[2024-10-18T20:22:11.044+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-18T20:22:16.215+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: run_dbt_models.model.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-18T20:20:02.851757+00:00 [running]> from DB
+[2024-10-18T20:22:16.279+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-18T20:22:21.315+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: run_dbt_models.model.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-18T20:20:02.851757+00:00 [running]> from DB
+[2024-10-18T20:22:21.334+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-18T20:22:26.375+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: run_dbt_models.model.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-18T20:20:02.851757+00:00 [running]> from DB
+[2024-10-18T20:22:26.391+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-18T20:22:31.433+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: run_dbt_models.model.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-18T20:20:02.851757+00:00 [running]> from DB
+[2024-10-18T20:22:31.451+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-18T20:22:36.502+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: run_dbt_models.model.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-18T20:20:02.851757+00:00 [running]> from DB
+[2024-10-18T20:22:36.521+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-18T20:22:41.555+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: run_dbt_models.model.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-18T20:20:02.851757+00:00 [running]> from DB
+[2024-10-18T20:22:41.571+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-18T20:22:46.616+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: run_dbt_models.model.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-18T20:20:02.851757+00:00 [running]> from DB
+[2024-10-18T20:22:46.630+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-18T20:22:51.662+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: run_dbt_models.model.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-18T20:20:02.851757+00:00 [running]> from DB
+[2024-10-18T20:22:51.680+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-18T20:22:56.710+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: run_dbt_models.model.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-18T20:20:02.851757+00:00 [running]> from DB
+[2024-10-18T20:22:56.727+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-18T20:23:01.755+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: run_dbt_models.model.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-18T20:20:02.851757+00:00 [running]> from DB
+[2024-10-18T20:23:01.768+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-18T20:23:06.822+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: run_dbt_models.model.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-18T20:20:02.851757+00:00 [running]> from DB
+[2024-10-18T20:23:06.841+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-18T20:23:11.873+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: run_dbt_models.model.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-18T20:20:02.851757+00:00 [running]> from DB
+[2024-10-18T20:23:11.886+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-18T20:23:16.917+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: run_dbt_models.model.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-18T20:20:02.851757+00:00 [running]> from DB
+[2024-10-18T20:23:16.931+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-18T20:23:21.961+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: run_dbt_models.model.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-18T20:20:02.851757+00:00 [running]> from DB
+[2024-10-18T20:23:21.974+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-18T20:23:27.004+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: run_dbt_models.model.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-18T20:20:02.851757+00:00 [running]> from DB
+[2024-10-18T20:23:27.017+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-18T20:23:32.048+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: run_dbt_models.model.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-18T20:20:02.851757+00:00 [running]> from DB
+[2024-10-18T20:23:32.065+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-18T20:23:37.116+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: run_dbt_models.model.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-18T20:20:02.851757+00:00 [running]> from DB
+[2024-10-18T20:23:37.134+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-18T20:23:42.168+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: run_dbt_models.model.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-18T20:20:02.851757+00:00 [running]> from DB
+[2024-10-18T20:23:42.179+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-18T20:23:47.217+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: run_dbt_models.model.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-18T20:20:02.851757+00:00 [running]> from DB
+[2024-10-18T20:23:47.229+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-18T20:23:52.266+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: run_dbt_models.model.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-18T20:20:02.851757+00:00 [running]> from DB
+[2024-10-18T20:23:52.283+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-18T20:23:57.319+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: run_dbt_models.model.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-18T20:20:02.851757+00:00 [running]> from DB
+[2024-10-18T20:23:57.338+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-18T20:24:02.370+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: run_dbt_models.model.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-18T20:20:02.851757+00:00 [running]> from DB
+[2024-10-18T20:24:02.384+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-18T20:24:07.420+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: run_dbt_models.model.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-18T20:20:02.851757+00:00 [running]> from DB
+[2024-10-18T20:24:07.432+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-18T20:24:12.464+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: run_dbt_models.model.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-18T20:20:02.851757+00:00 [running]> from DB
+[2024-10-18T20:24:12.476+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-18T20:24:17.508+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: run_dbt_models.model.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-18T20:20:02.851757+00:00 [running]> from DB
+[2024-10-18T20:24:17.519+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-18T20:24:22.552+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: run_dbt_models.model.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-18T20:20:02.851757+00:00 [running]> from DB
+[2024-10-18T20:24:22.565+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-18T20:24:27.601+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: run_dbt_models.model.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-18T20:20:02.851757+00:00 [running]> from DB
+[2024-10-18T20:24:27.615+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-18T20:24:32.665+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: run_dbt_models.model.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-18T20:20:02.851757+00:00 [running]> from DB
+[2024-10-18T20:24:32.680+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-18T20:24:37.730+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: run_dbt_models.model.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-18T20:20:02.851757+00:00 [running]> from DB
+[2024-10-18T20:24:37.743+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-18T20:24:42.783+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: run_dbt_models.model.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-18T20:20:02.851757+00:00 [running]> from DB
+[2024-10-18T20:24:42.811+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-18T20:24:47.844+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: run_dbt_models.model.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-18T20:20:02.851757+00:00 [running]> from DB
+[2024-10-18T20:24:47.856+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-18T20:24:52.886+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: run_dbt_models.model.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-18T20:20:02.851757+00:00 [running]> from DB
+[2024-10-18T20:24:52.900+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-18T20:24:57.933+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: run_dbt_models.model.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-18T20:20:02.851757+00:00 [running]> from DB
+[2024-10-18T20:24:57.945+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-18T20:25:02.981+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: run_dbt_models.model.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-18T20:20:02.851757+00:00 [running]> from DB
+[2024-10-18T20:25:02.995+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-18T20:25:08.029+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: run_dbt_models.model.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-18T20:20:02.851757+00:00 [running]> from DB
+[2024-10-18T20:25:08.049+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-18T20:25:13.080+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: run_dbt_models.model.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-18T20:20:02.851757+00:00 [running]> from DB
+[2024-10-18T20:25:13.093+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-18T20:25:18.124+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: run_dbt_models.model.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-18T20:20:02.851757+00:00 [running]> from DB
+[2024-10-18T20:25:18.136+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-18T20:25:23.175+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: run_dbt_models.model.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-18T20:20:02.851757+00:00 [running]> from DB
+[2024-10-18T20:25:23.187+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-18T20:25:28.217+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: run_dbt_models.model.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-18T20:20:02.851757+00:00 [running]> from DB
+[2024-10-18T20:25:28.230+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-18T20:25:33.267+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: run_dbt_models.model.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-18T20:20:02.851757+00:00 [running]> from DB
+[2024-10-18T20:25:33.280+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-18T20:25:38.327+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: run_dbt_models.model.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-18T20:20:02.851757+00:00 [running]> from DB
+[2024-10-18T20:25:38.341+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-18T20:25:43.371+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: run_dbt_models.model.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-18T20:20:02.851757+00:00 [running]> from DB
+[2024-10-18T20:25:43.384+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-18T20:25:48.423+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: run_dbt_models.model.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-18T20:20:02.851757+00:00 [running]> from DB
+[2024-10-18T20:25:48.435+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-18T20:25:53.469+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: run_dbt_models.model.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-18T20:20:02.851757+00:00 [running]> from DB
+[2024-10-18T20:25:53.482+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-18T20:25:58.512+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: run_dbt_models.model.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-18T20:20:02.851757+00:00 [running]> from DB
+[2024-10-18T20:25:58.524+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-18T20:26:03.557+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: run_dbt_models.model.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-18T20:20:02.851757+00:00 [running]> from DB
+[2024-10-18T20:26:03.570+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-18T20:26:08.601+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: run_dbt_models.model.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-18T20:20:02.851757+00:00 [running]> from DB
+[2024-10-18T20:26:08.614+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-18T20:26:13.367+0000] {subprocess.py:93} INFO - [0m20:26:13  1 of 1 OK created sql table model analytics.stg_kaggle__btcusdt ................ [[32mSELECT 110671480[0m in 357.36s]
+[2024-10-18T20:26:13.397+0000] {subprocess.py:93} INFO - [0m20:26:13
+[2024-10-18T20:26:13.398+0000] {subprocess.py:93} INFO - [0m20:26:13  Finished running 1 table model in 0 hours 5 minutes and 57.60 seconds (357.60s).
+[2024-10-18T20:26:13.401+0000] {subprocess.py:93} INFO - [0m20:26:13
+[2024-10-18T20:26:13.402+0000] {subprocess.py:93} INFO - [0m20:26:13  [32mCompleted successfully[0m
+[2024-10-18T20:26:13.403+0000] {subprocess.py:93} INFO - [0m20:26:13
+[2024-10-18T20:26:13.404+0000] {subprocess.py:93} INFO - [0m20:26:13  Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[2024-10-18T20:26:13.662+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: run_dbt_models.model.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-18T20:20:02.851757+00:00 [running]> from DB
+[2024-10-18T20:26:13.677+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-18T20:26:14.388+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-10-18T20:26:14.462+0000] {__init__.py:75} DEBUG - Lineage called with inlets: [], outlets: []
+[2024-10-18T20:26:14.463+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: run_dbt_models.model.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-18T20:20:02.851757+00:00 [running]> from DB
+[2024-10-18T20:26:14.483+0000] {taskinstance.py:1356} DEBUG - Clearing next_method and next_kwargs.
+[2024-10-18T20:26:14.484+0000] {taskinstance.py:1345} INFO - Marking task as SUCCESS. dag_id=run_dbt_models, task_id=model.dbt_btc_transform.stg_kaggle__btcusdt, execution_date=20241018T202002, start_date=20241018T202008, end_date=20241018T202614
+[2024-10-18T20:26:14.484+0000] {taskinstance.py:2305} DEBUG - Task Duration set to 365.974267
+[2024-10-18T20:26:14.509+0000] {cli_action_loggers.py:83} DEBUG - Calling callbacks: []
+[2024-10-18T20:26:14.557+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2024-10-18T20:26:14.600+0000] {dagrun.py:697} DEBUG - number of tis tasks for <DagRun run_dbt_models @ 2024-10-18 20:20:02.851757+00:00: manual__2024-10-18T20:20:02.851757+00:00, state:running, queued_at: 2024-10-18 20:20:02.902891+00:00. externally triggered: True>: 6 task(s)
+[2024-10-18T20:26:14.602+0000] {dagrun.py:718} DEBUG - number of scheduleable tasks for <DagRun run_dbt_models @ 2024-10-18 20:20:02.851757+00:00: manual__2024-10-18T20:20:02.851757+00:00, state:running, queued_at: 2024-10-18 20:20:02.902891+00:00. externally triggered: True>: 4 task(s)
+[2024-10-18T20:26:14.606+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: run_dbt_models.generate_dbt_docs manual__2024-10-18T20:20:02.851757+00:00 [None]> dependency 'Previous Dagrun State' PASSED: True, This task instance was the first task instance for its task.
+[2024-10-18T20:26:14.607+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: run_dbt_models.generate_dbt_docs manual__2024-10-18T20:20:02.851757+00:00 [None]> dependency 'Trigger Rule' PASSED: False, Task's trigger rule 'all_success' requires all upstream tasks to have succeeded, but found 3 non-success(es). upstream_states=_UpstreamTIStates(success=1, skipped=0, failed=0, upstream_failed=0, removed=0, done=1), upstream_task_ids={'test.dbt_btc_transform.fct_hourly_trades', 'model.dbt_btc_transform.fct_hourly_trades', 'test.dbt_btc_transform.stg_kaggle__btcusdt', 'model.dbt_btc_transform.stg_kaggle__btcusdt'}
+[2024-10-18T20:26:14.608+0000] {taskinstance.py:1093} DEBUG - Dependencies not met for <TaskInstance: run_dbt_models.generate_dbt_docs manual__2024-10-18T20:20:02.851757+00:00 [None]>, dependency 'Trigger Rule' FAILED: Task's trigger rule 'all_success' requires all upstream tasks to have succeeded, but found 3 non-success(es). upstream_states=_UpstreamTIStates(success=1, skipped=0, failed=0, upstream_failed=0, removed=0, done=1), upstream_task_ids={'test.dbt_btc_transform.fct_hourly_trades', 'model.dbt_btc_transform.fct_hourly_trades', 'test.dbt_btc_transform.stg_kaggle__btcusdt', 'model.dbt_btc_transform.stg_kaggle__btcusdt'}
+[2024-10-18T20:26:14.608+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: run_dbt_models.generate_dbt_docs manual__2024-10-18T20:20:02.851757+00:00 [None]> dependency 'Not In Retry Period' PASSED: True, The task instance was not marked for retrying.
+[2024-10-18T20:26:14.614+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: run_dbt_models.test.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-18T20:20:02.851757+00:00 [None]> dependency 'Previous Dagrun State' PASSED: True, This task instance was the first task instance for its task.
+[2024-10-18T20:26:14.614+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: run_dbt_models.test.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-18T20:20:02.851757+00:00 [None]> dependency 'Not In Retry Period' PASSED: True, The task instance was not marked for retrying.
+[2024-10-18T20:26:14.615+0000] {taskinstance.py:1103} DEBUG - Dependencies all met for dep_context=None ti=<TaskInstance: run_dbt_models.test.dbt_btc_transform.stg_kaggle__btcusdt manual__2024-10-18T20:20:02.851757+00:00 [None]>
+[2024-10-18T20:26:14.619+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: run_dbt_models.model.dbt_btc_transform.fct_hourly_trades manual__2024-10-18T20:20:02.851757+00:00 [None]> dependency 'Previous Dagrun State' PASSED: True, This task instance was the first task instance for its task.
+[2024-10-18T20:26:14.619+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: run_dbt_models.model.dbt_btc_transform.fct_hourly_trades manual__2024-10-18T20:20:02.851757+00:00 [None]> dependency 'Not In Retry Period' PASSED: True, The task instance was not marked for retrying.
+[2024-10-18T20:26:14.620+0000] {taskinstance.py:1103} DEBUG - Dependencies all met for dep_context=None ti=<TaskInstance: run_dbt_models.model.dbt_btc_transform.fct_hourly_trades manual__2024-10-18T20:20:02.851757+00:00 [None]>
+[2024-10-18T20:26:14.623+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: run_dbt_models.test.dbt_btc_transform.fct_hourly_trades manual__2024-10-18T20:20:02.851757+00:00 [None]> dependency 'Previous Dagrun State' PASSED: True, This task instance was the first task instance for its task.
+[2024-10-18T20:26:14.623+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: run_dbt_models.test.dbt_btc_transform.fct_hourly_trades manual__2024-10-18T20:20:02.851757+00:00 [None]> dependency 'Trigger Rule' PASSED: False, Task's trigger rule 'all_success' requires all upstream tasks to have succeeded, but found 1 non-success(es). upstream_states=_UpstreamTIStates(success=1, skipped=0, failed=0, upstream_failed=0, removed=0, done=1), upstream_task_ids={'model.dbt_btc_transform.fct_hourly_trades', 'wait_for_dbt_init'}
+[2024-10-18T20:26:14.624+0000] {taskinstance.py:1093} DEBUG - Dependencies not met for <TaskInstance: run_dbt_models.test.dbt_btc_transform.fct_hourly_trades manual__2024-10-18T20:20:02.851757+00:00 [None]>, dependency 'Trigger Rule' FAILED: Task's trigger rule 'all_success' requires all upstream tasks to have succeeded, but found 1 non-success(es). upstream_states=_UpstreamTIStates(success=1, skipped=0, failed=0, upstream_failed=0, removed=0, done=1), upstream_task_ids={'model.dbt_btc_transform.fct_hourly_trades', 'wait_for_dbt_init'}
+[2024-10-18T20:26:14.624+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: run_dbt_models.test.dbt_btc_transform.fct_hourly_trades manual__2024-10-18T20:20:02.851757+00:00 [None]> dependency 'Not In Retry Period' PASSED: True, The task instance was not marked for retrying.
+[2024-10-18T20:26:14.636+0000] {taskinstance.py:2651} INFO - 2 downstream tasks scheduled from follow-on schedule check

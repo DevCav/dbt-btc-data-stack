@@ -23,14 +23,12 @@ superset db upgrade
 # Create an admin user
 superset fab create-admin --username ${SUPERSET_ADMIN} --password ${SUPERSET_PASSWORD} --firstname Admin --lastname User --email admin@example.com
 
-# Load examples (optional)
-# superset load_examples
+# Set the database URI connection
+DB_CONNECTION_URI="postgresql://postgres:postgres@company_dw:5423/company_dw"
+superset set-database-uri -d company_dw -u "${DB_CONNECTION_URI}"
 
 # Initialize Superset
 superset init
-
-# Import dashboards
-superset import-dashboards -p /app/assets/prebuilt_dashboards.zip -u admin
 
 # Start the Superset server
 exec gunicorn --bind "0.0.0.0:8088" --access-logfile '-' --error-logfile '-' --workers 1 --worker-class gthread --threads 20 --timeout 60 --limit-request-line 0 --limit-request-field_size 0 "superset.app:create_app()"

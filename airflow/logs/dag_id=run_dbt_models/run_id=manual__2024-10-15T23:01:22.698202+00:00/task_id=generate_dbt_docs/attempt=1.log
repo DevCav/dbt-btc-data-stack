@@ -1,0 +1,61 @@
+[2024-10-15T23:01:25.641+0000] {taskinstance.py:1037} DEBUG - previous_execution_date was called
+[2024-10-15T23:01:25.656+0000] {__init__.py:51} DEBUG - Loading core task runner: StandardTaskRunner
+[2024-10-15T23:01:25.672+0000] {taskinstance.py:1037} DEBUG - previous_execution_date was called
+[2024-10-15T23:01:25.676+0000] {base_task_runner.py:68} DEBUG - Planning to run as the  user
+[2024-10-15T23:01:25.679+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: run_dbt_models.generate_dbt_docs manual__2024-10-15T23:01:22.698202+00:00 [queued]> from DB
+[2024-10-15T23:01:25.705+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: run_dbt_models.generate_dbt_docs manual__2024-10-15T23:01:22.698202+00:00 [queued]> dependency 'Previous Dagrun State' PASSED: True, This task instance was the first task instance for its task.
+[2024-10-15T23:01:25.712+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: run_dbt_models.generate_dbt_docs manual__2024-10-15T23:01:22.698202+00:00 [queued]> dependency 'Trigger Rule' PASSED: True, The task instance did not have any upstream tasks.
+[2024-10-15T23:01:25.712+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: run_dbt_models.generate_dbt_docs manual__2024-10-15T23:01:22.698202+00:00 [queued]> dependency 'Task Instance Not Running' PASSED: True, Task is not in running state.
+[2024-10-15T23:01:25.712+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: run_dbt_models.generate_dbt_docs manual__2024-10-15T23:01:22.698202+00:00 [queued]> dependency 'Task Instance State' PASSED: True, Task state queued was valid.
+[2024-10-15T23:01:25.713+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: run_dbt_models.generate_dbt_docs manual__2024-10-15T23:01:22.698202+00:00 [queued]> dependency 'Not In Retry Period' PASSED: True, The task instance was not marked for retrying.
+[2024-10-15T23:01:25.713+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: run_dbt_models.generate_dbt_docs manual__2024-10-15T23:01:22.698202+00:00 [queued]>
+[2024-10-15T23:01:25.715+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: run_dbt_models.generate_dbt_docs manual__2024-10-15T23:01:22.698202+00:00 [queued]> dependency 'Previous Dagrun State' PASSED: True, This task instance was the first task instance for its task.
+[2024-10-15T23:01:25.719+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: run_dbt_models.generate_dbt_docs manual__2024-10-15T23:01:22.698202+00:00 [queued]> dependency 'Task Concurrency' PASSED: True, Task concurrency is not set.
+[2024-10-15T23:01:25.719+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: run_dbt_models.generate_dbt_docs manual__2024-10-15T23:01:22.698202+00:00 [queued]> dependency 'Trigger Rule' PASSED: True, The task instance did not have any upstream tasks.
+[2024-10-15T23:01:25.723+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: run_dbt_models.generate_dbt_docs manual__2024-10-15T23:01:22.698202+00:00 [queued]> dependency 'Pool Slots Available' PASSED: True, There are enough open slots in default_pool to execute the task
+[2024-10-15T23:01:25.724+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: run_dbt_models.generate_dbt_docs manual__2024-10-15T23:01:22.698202+00:00 [queued]> dependency 'Not In Retry Period' PASSED: True, The task instance was not marked for retrying.
+[2024-10-15T23:01:25.724+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: run_dbt_models.generate_dbt_docs manual__2024-10-15T23:01:22.698202+00:00 [queued]>
+[2024-10-15T23:01:25.724+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 2
+[2024-10-15T23:01:25.736+0000] {taskinstance.py:1327} INFO - Executing <Task(BashOperator): generate_dbt_docs> on 2024-10-15 23:01:22.698202+00:00
+[2024-10-15T23:01:25.739+0000] {standard_task_runner.py:57} INFO - Started process 473 to run task
+[2024-10-15T23:01:25.743+0000] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'run_dbt_models', 'generate_dbt_docs', 'manual__2024-10-15T23:01:22.698202+00:00', '--job-id', '29', '--raw', '--subdir', 'DAGS_FOLDER/run_dbt_models.py', '--cfg-path', '/tmp/tmp_lgrz32m']
+[2024-10-15T23:01:25.744+0000] {standard_task_runner.py:85} INFO - Job 29: Subtask generate_dbt_docs
+[2024-10-15T23:01:25.745+0000] {cli_action_loggers.py:65} DEBUG - Calling callbacks: [<function default_action_log at 0x7f7b0c199c10>]
+[2024-10-15T23:01:25.804+0000] {taskinstance.py:1037} DEBUG - previous_execution_date was called
+[2024-10-15T23:01:25.808+0000] {task_command.py:410} INFO - Running <TaskInstance: run_dbt_models.generate_dbt_docs manual__2024-10-15T23:01:22.698202+00:00 [running]> on host d867809303f2
+[2024-10-15T23:01:25.809+0000] {settings.py:353} DEBUG - Disposing DB connection pool (PID 473)
+[2024-10-15T23:01:25.809+0000] {settings.py:212} DEBUG - Setting up DB connection pool (PID 473)
+[2024-10-15T23:01:25.809+0000] {settings.py:285} DEBUG - settings.prepare_engine_args(): Using NullPool
+[2024-10-15T23:01:25.811+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: run_dbt_models.generate_dbt_docs manual__2024-10-15T23:01:22.698202+00:00 [running]> from DB
+[2024-10-15T23:01:25.853+0000] {taskinstance.py:1037} DEBUG - previous_execution_date was called
+[2024-10-15T23:01:25.855+0000] {taskinstance.py:868} DEBUG - Clearing XCom data
+[2024-10-15T23:01:25.889+0000] {retries.py:80} DEBUG - Running RenderedTaskInstanceFields._do_delete_old_records with retries. Try 1 of 3
+[2024-10-15T23:01:25.904+0000] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='airflow@example.com' AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='run_dbt_models' AIRFLOW_CTX_TASK_ID='generate_dbt_docs' AIRFLOW_CTX_EXECUTION_DATE='2024-10-15T23:01:22.698202+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-10-15T23:01:22.698202+00:00'
+[2024-10-15T23:01:25.904+0000] {__init__.py:117} DEBUG - Preparing lineage inlets and outlets
+[2024-10-15T23:01:25.905+0000] {__init__.py:155} DEBUG - inlets: [], outlets: []
+[2024-10-15T23:01:25.906+0000] {bash.py:186} DEBUG - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='airflow@example.com' AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='run_dbt_models' AIRFLOW_CTX_TASK_ID='generate_dbt_docs' AIRFLOW_CTX_EXECUTION_DATE='2024-10-15T23:01:22.698202+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-10-15T23:01:22.698202+00:00'
+[2024-10-15T23:01:25.906+0000] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2024-10-15T23:01:25.907+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'dbt docs generate --profiles-dir /opt/airflow/dbt --project-dir /opt/airflow/dbt']
+[2024-10-15T23:01:25.915+0000] {subprocess.py:86} INFO - Output:
+[2024-10-15T23:01:28.103+0000] {subprocess.py:93} INFO - [0m23:01:28  Running with dbt=1.8.7
+[2024-10-15T23:01:28.405+0000] {subprocess.py:93} INFO - [0m23:01:28  Registered adapter: ***=1.8.2
+[2024-10-15T23:01:28.572+0000] {subprocess.py:93} INFO - [0m23:01:28  Unable to do partial parsing because of a version mismatch
+[2024-10-15T23:01:30.777+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: run_dbt_models.generate_dbt_docs manual__2024-10-15T23:01:22.698202+00:00 [running]> from DB
+[2024-10-15T23:01:30.792+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-15T23:01:30.808+0000] {subprocess.py:93} INFO - [0m23:01:30  Found 1 model, 1 source, 540 macros
+[2024-10-15T23:01:30.812+0000] {subprocess.py:93} INFO - [0m23:01:30
+[2024-10-15T23:01:30.970+0000] {subprocess.py:93} INFO - [0m23:01:30  Concurrency: 4 threads (target='dev')
+[2024-10-15T23:01:30.970+0000] {subprocess.py:93} INFO - [0m23:01:30
+[2024-10-15T23:01:31.176+0000] {subprocess.py:93} INFO - [0m23:01:31  Building catalog
+[2024-10-15T23:01:31.285+0000] {subprocess.py:93} INFO - [0m23:01:31  Catalog written to /opt/airflow/dbt/target/catalog.json
+[2024-10-15T23:01:31.940+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-10-15T23:01:31.972+0000] {__init__.py:75} DEBUG - Lineage called with inlets: [], outlets: []
+[2024-10-15T23:01:31.973+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: run_dbt_models.generate_dbt_docs manual__2024-10-15T23:01:22.698202+00:00 [running]> from DB
+[2024-10-15T23:01:31.988+0000] {taskinstance.py:1356} DEBUG - Clearing next_method and next_kwargs.
+[2024-10-15T23:01:31.989+0000] {taskinstance.py:1345} INFO - Marking task as SUCCESS. dag_id=run_dbt_models, task_id=generate_dbt_docs, execution_date=20241015T230122, start_date=20241015T230125, end_date=20241015T230131
+[2024-10-15T23:01:31.989+0000] {taskinstance.py:2305} DEBUG - Task Duration set to 6.275138
+[2024-10-15T23:01:32.004+0000] {cli_action_loggers.py:83} DEBUG - Calling callbacks: []
+[2024-10-15T23:01:32.037+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2024-10-15T23:01:32.096+0000] {dagrun.py:697} DEBUG - number of tis tasks for <DagRun run_dbt_models @ 2024-10-15 23:01:22.698202+00:00: manual__2024-10-15T23:01:22.698202+00:00, state:running, queued_at: 2024-10-15 23:01:22.706036+00:00. externally triggered: True>: 0 task(s)
+[2024-10-15T23:01:32.096+0000] {taskinstance.py:2651} INFO - 0 downstream tasks scheduled from follow-on schedule check

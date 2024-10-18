@@ -1,0 +1,81 @@
+version: 2
+
+models:
+  - name: stg_kaggle__btcusdt
+    description: "A table that captures BTC/USDT trading data. Includes open/close times, high/low prices, volumes, and flags to denote hour start and hour end records."
+    columns:
+      - name: open_time
+        description: "The time when the trading window opens."
+        tests:
+          - not_null
+          - unique
+
+      - name: close_time
+        description: "The time when the trading window closes."
+        tests:
+          - not_null
+          - unique
+
+      - name: open
+        description: "The opening price of BTC/USDT for the trading window."
+        tests:
+          - not_null
+
+      - name: high
+        description: "The highest price reached during the trading window."
+        tests:
+          - not_null
+
+      - name: low
+        description: "The lowest price reached during the trading window."
+        tests:
+          - not_null
+
+      - name: close
+        description: "The closing price of BTC/USDT for the trading window."
+        tests:
+          - not_null
+
+      - name: volume
+        description: "The volume of BTC traded during the trading window."
+        tests:
+          - not_null
+
+      - name: quote_asset_volume
+        description: "The volume of the quote asset (USDT) traded during the trading window."
+        tests:
+          - not_null
+
+      - name: number_of_trades
+        description: "The number of trades executed during the trading window."
+        tests:
+          - not_null
+
+      - name: taker_buy_base_asset_volume
+        description: "The volume of BTC bought by takers during the trading window."
+        tests:
+          - not_null
+
+      - name: taker_buy_quote_asset_volume
+        description: "The volume of the quote asset (USDT) bought by takers during the trading window."
+        tests:
+          - not_null
+
+      - name: open_date
+        description: "The date extracted from the open_time. Used for date-based analysis."
+        tests:
+          - not_null
+
+      - name: hour_start
+        description: "Flag indicating if the record represents the start of the hour."
+        tests:
+          - not_null
+          - accepted_values:
+              values: [true, false]
+
+      - name: hour_end
+        description: "Flag indicating if the record represents the end of the hour."
+        tests:
+          - not_null
+          - accepted_values:
+              values: [true, false]

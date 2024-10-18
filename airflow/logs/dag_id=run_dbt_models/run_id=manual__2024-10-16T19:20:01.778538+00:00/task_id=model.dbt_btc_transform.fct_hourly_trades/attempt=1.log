@@ -1,0 +1,72 @@
+[2024-10-16T19:20:21.349+0000] {taskinstance.py:1037} DEBUG - previous_execution_date was called
+[2024-10-16T19:20:21.393+0000] {__init__.py:51} DEBUG - Loading core task runner: StandardTaskRunner
+[2024-10-16T19:20:21.414+0000] {taskinstance.py:1037} DEBUG - previous_execution_date was called
+[2024-10-16T19:20:21.422+0000] {base_task_runner.py:68} DEBUG - Planning to run as the  user
+[2024-10-16T19:20:21.425+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: run_dbt_models.model.dbt_btc_transform.fct_hourly_trades manual__2024-10-16T19:20:01.778538+00:00 [queued]> from DB
+[2024-10-16T19:20:21.446+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: run_dbt_models.model.dbt_btc_transform.fct_hourly_trades manual__2024-10-16T19:20:01.778538+00:00 [queued]> dependency 'Task Instance State' PASSED: True, Task state queued was valid.
+[2024-10-16T19:20:21.451+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: run_dbt_models.model.dbt_btc_transform.fct_hourly_trades manual__2024-10-16T19:20:01.778538+00:00 [queued]> dependency 'Previous Dagrun State' PASSED: True, This task instance was the first task instance for its task.
+[2024-10-16T19:20:21.452+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: run_dbt_models.model.dbt_btc_transform.fct_hourly_trades manual__2024-10-16T19:20:01.778538+00:00 [queued]> dependency 'Task Instance Not Running' PASSED: True, Task is not in running state.
+[2024-10-16T19:20:21.463+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: run_dbt_models.model.dbt_btc_transform.fct_hourly_trades manual__2024-10-16T19:20:01.778538+00:00 [queued]> dependency 'Not In Retry Period' PASSED: True, The task instance was not marked for retrying.
+[2024-10-16T19:20:21.464+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: run_dbt_models.model.dbt_btc_transform.fct_hourly_trades manual__2024-10-16T19:20:01.778538+00:00 [queued]>
+[2024-10-16T19:20:21.464+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: run_dbt_models.model.dbt_btc_transform.fct_hourly_trades manual__2024-10-16T19:20:01.778538+00:00 [queued]> dependency 'Task Concurrency' PASSED: True, Task concurrency is not set.
+[2024-10-16T19:20:21.466+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: run_dbt_models.model.dbt_btc_transform.fct_hourly_trades manual__2024-10-16T19:20:01.778538+00:00 [queued]> dependency 'Previous Dagrun State' PASSED: True, This task instance was the first task instance for its task.
+[2024-10-16T19:20:21.472+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: run_dbt_models.model.dbt_btc_transform.fct_hourly_trades manual__2024-10-16T19:20:01.778538+00:00 [queued]> dependency 'Not In Retry Period' PASSED: True, The task instance was not marked for retrying.
+[2024-10-16T19:20:21.476+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: run_dbt_models.model.dbt_btc_transform.fct_hourly_trades manual__2024-10-16T19:20:01.778538+00:00 [queued]> dependency 'Pool Slots Available' PASSED: True, There are enough open slots in default_pool to execute the task
+[2024-10-16T19:20:21.477+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: run_dbt_models.model.dbt_btc_transform.fct_hourly_trades manual__2024-10-16T19:20:01.778538+00:00 [queued]>
+[2024-10-16T19:20:21.477+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 2
+[2024-10-16T19:20:21.490+0000] {taskinstance.py:1327} INFO - Executing <Task(BashOperator): model.dbt_btc_transform.fct_hourly_trades> on 2024-10-16 19:20:01.778538+00:00
+[2024-10-16T19:20:21.493+0000] {standard_task_runner.py:57} INFO - Started process 2593 to run task
+[2024-10-16T19:20:21.497+0000] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'run_dbt_models', 'model.dbt_btc_transform.fct_hourly_trades', 'manual__2024-10-16T19:20:01.778538+00:00', '--job-id', '107', '--raw', '--subdir', 'DAGS_FOLDER/run_dbt_models.py', '--cfg-path', '/tmp/tmpml6j4o1m']
+[2024-10-16T19:20:21.498+0000] {standard_task_runner.py:85} INFO - Job 107: Subtask model.dbt_btc_transform.fct_hourly_trades
+[2024-10-16T19:20:21.499+0000] {cli_action_loggers.py:65} DEBUG - Calling callbacks: [<function default_action_log at 0x7f7ca9505550>]
+[2024-10-16T19:20:21.554+0000] {taskinstance.py:1037} DEBUG - previous_execution_date was called
+[2024-10-16T19:20:21.562+0000] {task_command.py:410} INFO - Running <TaskInstance: run_dbt_models.model.dbt_btc_transform.fct_hourly_trades manual__2024-10-16T19:20:01.778538+00:00 [running]> on host 888d2c584607
+[2024-10-16T19:20:21.563+0000] {settings.py:353} DEBUG - Disposing DB connection pool (PID 2593)
+[2024-10-16T19:20:21.563+0000] {settings.py:212} DEBUG - Setting up DB connection pool (PID 2593)
+[2024-10-16T19:20:21.564+0000] {settings.py:285} DEBUG - settings.prepare_engine_args(): Using NullPool
+[2024-10-16T19:20:21.566+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: run_dbt_models.model.dbt_btc_transform.fct_hourly_trades manual__2024-10-16T19:20:01.778538+00:00 [running]> from DB
+[2024-10-16T19:20:21.609+0000] {taskinstance.py:1037} DEBUG - previous_execution_date was called
+[2024-10-16T19:20:21.618+0000] {taskinstance.py:868} DEBUG - Clearing XCom data
+[2024-10-16T19:20:21.649+0000] {retries.py:80} DEBUG - Running RenderedTaskInstanceFields._do_delete_old_records with retries. Try 1 of 3
+[2024-10-16T19:20:21.664+0000] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='airflow@example.com' AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='run_dbt_models' AIRFLOW_CTX_TASK_ID='model.dbt_btc_transform.fct_hourly_trades' AIRFLOW_CTX_EXECUTION_DATE='2024-10-16T19:20:01.778538+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-10-16T19:20:01.778538+00:00'
+[2024-10-16T19:20:21.665+0000] {__init__.py:117} DEBUG - Preparing lineage inlets and outlets
+[2024-10-16T19:20:21.666+0000] {__init__.py:155} DEBUG - inlets: [], outlets: []
+[2024-10-16T19:20:21.666+0000] {bash.py:186} DEBUG - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='airflow@example.com' AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='run_dbt_models' AIRFLOW_CTX_TASK_ID='model.dbt_btc_transform.fct_hourly_trades' AIRFLOW_CTX_EXECUTION_DATE='2024-10-16T19:20:01.778538+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-10-16T19:20:01.778538+00:00'
+[2024-10-16T19:20:21.667+0000] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2024-10-16T19:20:21.668+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', '\n            export DBT_SCHEMA=analytics &&\n            cd /opt/airflow/dbt &&\n            /home/airflow/.local/bin/dbt --no-write-json run --target dev --models fct_hourly_trades\n            ']
+[2024-10-16T19:20:21.676+0000] {subprocess.py:86} INFO - Output:
+[2024-10-16T19:20:23.815+0000] {subprocess.py:93} INFO - [0m19:20:23  Running with dbt=1.8.7
+[2024-10-16T19:20:24.104+0000] {subprocess.py:93} INFO - [0m19:20:24  Registered adapter: ***=1.8.2
+[2024-10-16T19:20:24.483+0000] {subprocess.py:93} INFO - [0m19:20:24  Found 2 models, 25 data tests, 1 source, 540 macros
+[2024-10-16T19:20:24.486+0000] {subprocess.py:93} INFO - [0m19:20:24
+[2024-10-16T19:20:24.679+0000] {subprocess.py:93} INFO - [0m19:20:24  Concurrency: 4 threads (target='dev')
+[2024-10-16T19:20:24.680+0000] {subprocess.py:93} INFO - [0m19:20:24
+[2024-10-16T19:20:24.690+0000] {subprocess.py:93} INFO - [0m19:20:24  1 of 1 START sql table model analytics.fct_hourly_trades ....................... [RUN]
+[2024-10-16T19:20:24.910+0000] {subprocess.py:93} INFO - [0m19:20:24  1 of 1 OK created sql table model analytics.fct_hourly_trades .................. [[32mSELECT 276[0m in 0.22s]
+[2024-10-16T19:20:24.928+0000] {subprocess.py:93} INFO - [0m19:20:24
+[2024-10-16T19:20:24.929+0000] {subprocess.py:93} INFO - [0m19:20:24  Finished running 1 table model in 0 hours 0 minutes and 0.44 seconds (0.44s).
+[2024-10-16T19:20:24.931+0000] {subprocess.py:93} INFO - [0m19:20:24
+[2024-10-16T19:20:24.932+0000] {subprocess.py:93} INFO - [0m19:20:24  [32mCompleted successfully[0m
+[2024-10-16T19:20:24.933+0000] {subprocess.py:93} INFO - [0m19:20:24
+[2024-10-16T19:20:24.934+0000] {subprocess.py:93} INFO - [0m19:20:24  Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[2024-10-16T19:20:26.536+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: run_dbt_models.model.dbt_btc_transform.fct_hourly_trades manual__2024-10-16T19:20:01.778538+00:00 [running]> from DB
+[2024-10-16T19:20:26.555+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-16T19:20:26.599+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-10-16T19:20:26.628+0000] {__init__.py:75} DEBUG - Lineage called with inlets: [], outlets: []
+[2024-10-16T19:20:26.629+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: run_dbt_models.model.dbt_btc_transform.fct_hourly_trades manual__2024-10-16T19:20:01.778538+00:00 [running]> from DB
+[2024-10-16T19:20:26.644+0000] {taskinstance.py:1356} DEBUG - Clearing next_method and next_kwargs.
+[2024-10-16T19:20:26.645+0000] {taskinstance.py:1345} INFO - Marking task as SUCCESS. dag_id=run_dbt_models, task_id=model.dbt_btc_transform.fct_hourly_trades, execution_date=20241016T192001, start_date=20241016T192021, end_date=20241016T192026
+[2024-10-16T19:20:26.645+0000] {taskinstance.py:2305} DEBUG - Task Duration set to 5.180617
+[2024-10-16T19:20:26.660+0000] {cli_action_loggers.py:83} DEBUG - Calling callbacks: []
+[2024-10-16T19:20:26.694+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2024-10-16T19:20:26.759+0000] {dagrun.py:697} DEBUG - number of tis tasks for <DagRun run_dbt_models @ 2024-10-16 19:20:01.778538+00:00: manual__2024-10-16T19:20:01.778538+00:00, state:running, queued_at: 2024-10-16 19:20:01.793572+00:00. externally triggered: True>: 6 task(s)
+[2024-10-16T19:20:26.760+0000] {dagrun.py:718} DEBUG - number of scheduleable tasks for <DagRun run_dbt_models @ 2024-10-16 19:20:01.778538+00:00: manual__2024-10-16T19:20:01.778538+00:00, state:running, queued_at: 2024-10-16 19:20:01.793572+00:00. externally triggered: True>: 2 task(s)
+[2024-10-16T19:20:26.762+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: run_dbt_models.generate_dbt_docs manual__2024-10-16T19:20:01.778538+00:00 [None]> dependency 'Previous Dagrun State' PASSED: True, This task instance was the first task instance for its task.
+[2024-10-16T19:20:26.762+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: run_dbt_models.generate_dbt_docs manual__2024-10-16T19:20:01.778538+00:00 [None]> dependency 'Not In Retry Period' PASSED: True, The task instance was not marked for retrying.
+[2024-10-16T19:20:26.763+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: run_dbt_models.generate_dbt_docs manual__2024-10-16T19:20:01.778538+00:00 [None]> dependency 'Trigger Rule' PASSED: False, Task's trigger rule 'all_success' requires all upstream tasks to have succeeded, but found 1 non-success(es). upstream_states=_UpstreamTIStates(success=3, skipped=0, failed=0, upstream_failed=0, removed=0, done=3), upstream_task_ids={'model.dbt_btc_transform.fct_hourly_trades', 'model.dbt_btc_transform.stg_kaggle__btcusdt', 'test.dbt_btc_transform.fct_hourly_trades', 'test.dbt_btc_transform.stg_kaggle__btcusdt'}
+[2024-10-16T19:20:26.763+0000] {taskinstance.py:1093} DEBUG - Dependencies not met for <TaskInstance: run_dbt_models.generate_dbt_docs manual__2024-10-16T19:20:01.778538+00:00 [None]>, dependency 'Trigger Rule' FAILED: Task's trigger rule 'all_success' requires all upstream tasks to have succeeded, but found 1 non-success(es). upstream_states=_UpstreamTIStates(success=3, skipped=0, failed=0, upstream_failed=0, removed=0, done=3), upstream_task_ids={'model.dbt_btc_transform.fct_hourly_trades', 'model.dbt_btc_transform.stg_kaggle__btcusdt', 'test.dbt_btc_transform.fct_hourly_trades', 'test.dbt_btc_transform.stg_kaggle__btcusdt'}
+[2024-10-16T19:20:26.765+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: run_dbt_models.test.dbt_btc_transform.fct_hourly_trades manual__2024-10-16T19:20:01.778538+00:00 [None]> dependency 'Previous Dagrun State' PASSED: True, This task instance was the first task instance for its task.
+[2024-10-16T19:20:26.765+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: run_dbt_models.test.dbt_btc_transform.fct_hourly_trades manual__2024-10-16T19:20:01.778538+00:00 [None]> dependency 'Not In Retry Period' PASSED: True, The task instance was not marked for retrying.
+[2024-10-16T19:20:26.768+0000] {taskinstance.py:1103} DEBUG - Dependencies all met for dep_context=None ti=<TaskInstance: run_dbt_models.test.dbt_btc_transform.fct_hourly_trades manual__2024-10-16T19:20:01.778538+00:00 [None]>
+[2024-10-16T19:20:26.776+0000] {taskinstance.py:2651} INFO - 1 downstream tasks scheduled from follow-on schedule check

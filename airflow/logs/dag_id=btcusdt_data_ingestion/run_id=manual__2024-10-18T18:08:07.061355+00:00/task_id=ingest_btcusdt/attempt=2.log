@@ -1,0 +1,88 @@
+[2024-10-18T18:21:41.785+0000] {taskinstance.py:1037} DEBUG - previous_execution_date was called
+[2024-10-18T18:21:41.832+0000] {__init__.py:51} DEBUG - Loading core task runner: StandardTaskRunner
+[2024-10-18T18:21:41.859+0000] {taskinstance.py:1037} DEBUG - previous_execution_date was called
+[2024-10-18T18:21:41.867+0000] {base_task_runner.py:68} DEBUG - Planning to run as the  user
+[2024-10-18T18:21:41.880+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: btcusdt_data_ingestion.ingest_btcusdt manual__2024-10-18T18:08:07.061355+00:00 [queued]> from DB
+[2024-10-18T18:21:41.953+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: btcusdt_data_ingestion.ingest_btcusdt manual__2024-10-18T18:08:07.061355+00:00 [queued]> dependency 'Task Instance State' PASSED: True, Task state queued was valid.
+[2024-10-18T18:21:41.954+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: btcusdt_data_ingestion.ingest_btcusdt manual__2024-10-18T18:08:07.061355+00:00 [queued]> dependency 'Previous Dagrun State' PASSED: True, The task did not have depends_on_past set.
+[2024-10-18T18:21:41.955+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: btcusdt_data_ingestion.ingest_btcusdt manual__2024-10-18T18:08:07.061355+00:00 [queued]> dependency 'Task Instance Not Running' PASSED: True, Task is not in running state.
+[2024-10-18T18:21:41.970+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: btcusdt_data_ingestion.ingest_btcusdt manual__2024-10-18T18:08:07.061355+00:00 [queued]> dependency 'Not In Retry Period' PASSED: True, The task instance was not marked for retrying.
+[2024-10-18T18:21:41.976+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: btcusdt_data_ingestion.ingest_btcusdt manual__2024-10-18T18:08:07.061355+00:00 [queued]>
+[2024-10-18T18:21:41.977+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: btcusdt_data_ingestion.ingest_btcusdt manual__2024-10-18T18:08:07.061355+00:00 [queued]> dependency 'Task Concurrency' PASSED: True, Task concurrency is not set.
+[2024-10-18T18:21:41.977+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: btcusdt_data_ingestion.ingest_btcusdt manual__2024-10-18T18:08:07.061355+00:00 [queued]> dependency 'Previous Dagrun State' PASSED: True, The task did not have depends_on_past set.
+[2024-10-18T18:21:41.990+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: btcusdt_data_ingestion.ingest_btcusdt manual__2024-10-18T18:08:07.061355+00:00 [queued]> dependency 'Not In Retry Period' PASSED: True, The task instance was not marked for retrying.
+[2024-10-18T18:21:41.998+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: btcusdt_data_ingestion.ingest_btcusdt manual__2024-10-18T18:08:07.061355+00:00 [queued]> dependency 'Pool Slots Available' PASSED: True, There are enough open slots in default_pool to execute the task
+[2024-10-18T18:21:41.998+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: btcusdt_data_ingestion.ingest_btcusdt manual__2024-10-18T18:08:07.061355+00:00 [queued]>
+[2024-10-18T18:21:41.998+0000] {taskinstance.py:1308} INFO - Starting attempt 2 of 2
+[2024-10-18T18:21:42.019+0000] {taskinstance.py:1327} INFO - Executing <Task(PythonOperator): ingest_btcusdt> on 2024-10-18 18:08:07.061355+00:00
+[2024-10-18T18:21:42.025+0000] {standard_task_runner.py:57} INFO - Started process 20223 to run task
+[2024-10-18T18:21:42.031+0000] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'btcusdt_data_ingestion', 'ingest_btcusdt', 'manual__2024-10-18T18:08:07.061355+00:00', '--job-id', '152', '--raw', '--subdir', 'DAGS_FOLDER/ingest_btcusdt_data.py', '--cfg-path', '/tmp/tmp0b83e6uh']
+[2024-10-18T18:21:42.036+0000] {standard_task_runner.py:85} INFO - Job 152: Subtask ingest_btcusdt
+[2024-10-18T18:21:42.037+0000] {cli_action_loggers.py:65} DEBUG - Calling callbacks: [<function default_action_log at 0x7f7ca9505550>]
+[2024-10-18T18:21:42.103+0000] {taskinstance.py:1037} DEBUG - previous_execution_date was called
+[2024-10-18T18:21:42.112+0000] {task_command.py:410} INFO - Running <TaskInstance: btcusdt_data_ingestion.ingest_btcusdt manual__2024-10-18T18:08:07.061355+00:00 [running]> on host 888d2c584607
+[2024-10-18T18:21:42.113+0000] {settings.py:353} DEBUG - Disposing DB connection pool (PID 20223)
+[2024-10-18T18:21:42.113+0000] {settings.py:212} DEBUG - Setting up DB connection pool (PID 20223)
+[2024-10-18T18:21:42.114+0000] {settings.py:285} DEBUG - settings.prepare_engine_args(): Using NullPool
+[2024-10-18T18:21:42.116+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: btcusdt_data_ingestion.ingest_btcusdt manual__2024-10-18T18:08:07.061355+00:00 [running]> from DB
+[2024-10-18T18:21:42.165+0000] {taskinstance.py:1037} DEBUG - previous_execution_date was called
+[2024-10-18T18:21:42.175+0000] {taskinstance.py:868} DEBUG - Clearing XCom data
+[2024-10-18T18:21:42.235+0000] {retries.py:80} DEBUG - Running RenderedTaskInstanceFields._do_delete_old_records with retries. Try 1 of 3
+[2024-10-18T18:21:42.259+0000] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='btcusdt_data_ingestion' AIRFLOW_CTX_TASK_ID='ingest_btcusdt' AIRFLOW_CTX_EXECUTION_DATE='2024-10-18T18:08:07.061355+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-10-18T18:08:07.061355+00:00'
+[2024-10-18T18:21:42.259+0000] {__init__.py:117} DEBUG - Preparing lineage inlets and outlets
+[2024-10-18T18:21:42.261+0000] {__init__.py:155} DEBUG - inlets: [], outlets: []
+[2024-10-18T18:21:47.089+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: btcusdt_data_ingestion.ingest_btcusdt manual__2024-10-18T18:08:07.061355+00:00 [running]> from DB
+[2024-10-18T18:21:47.109+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-18T18:21:52.170+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: btcusdt_data_ingestion.ingest_btcusdt manual__2024-10-18T18:08:07.061355+00:00 [running]> from DB
+[2024-10-18T18:21:52.220+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-18T18:21:57.288+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: btcusdt_data_ingestion.ingest_btcusdt manual__2024-10-18T18:08:07.061355+00:00 [running]> from DB
+[2024-10-18T18:21:57.486+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-18T18:22:02.520+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: btcusdt_data_ingestion.ingest_btcusdt manual__2024-10-18T18:08:07.061355+00:00 [running]> from DB
+[2024-10-18T18:22:02.559+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-18T18:22:07.624+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: btcusdt_data_ingestion.ingest_btcusdt manual__2024-10-18T18:08:07.061355+00:00 [running]> from DB
+[2024-10-18T18:22:07.649+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-18T18:22:12.719+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: btcusdt_data_ingestion.ingest_btcusdt manual__2024-10-18T18:08:07.061355+00:00 [running]> from DB
+[2024-10-18T18:22:12.752+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-18T18:22:17.811+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: btcusdt_data_ingestion.ingest_btcusdt manual__2024-10-18T18:08:07.061355+00:00 [running]> from DB
+[2024-10-18T18:22:17.835+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-18T18:22:22.918+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: btcusdt_data_ingestion.ingest_btcusdt manual__2024-10-18T18:08:07.061355+00:00 [running]> from DB
+[2024-10-18T18:22:22.951+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-18T18:22:28.007+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: btcusdt_data_ingestion.ingest_btcusdt manual__2024-10-18T18:08:07.061355+00:00 [running]> from DB
+[2024-10-18T18:22:28.028+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-18T18:22:33.095+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: btcusdt_data_ingestion.ingest_btcusdt manual__2024-10-18T18:08:07.061355+00:00 [running]> from DB
+[2024-10-18T18:22:33.135+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-18T18:22:38.483+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: btcusdt_data_ingestion.ingest_btcusdt manual__2024-10-18T18:08:07.061355+00:00 [running]> from DB
+[2024-10-18T18:22:38.670+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-18T18:22:43.807+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: btcusdt_data_ingestion.ingest_btcusdt manual__2024-10-18T18:08:07.061355+00:00 [running]> from DB
+[2024-10-18T18:22:43.898+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-18T18:22:49.050+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: btcusdt_data_ingestion.ingest_btcusdt manual__2024-10-18T18:08:07.061355+00:00 [running]> from DB
+[2024-10-18T18:22:49.067+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-18T18:22:54.120+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: btcusdt_data_ingestion.ingest_btcusdt manual__2024-10-18T18:08:07.061355+00:00 [running]> from DB
+[2024-10-18T18:22:54.144+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-18T18:22:59.173+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: btcusdt_data_ingestion.ingest_btcusdt manual__2024-10-18T18:08:07.061355+00:00 [running]> from DB
+[2024-10-18T18:22:59.199+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-18T18:23:04.259+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: btcusdt_data_ingestion.ingest_btcusdt manual__2024-10-18T18:08:07.061355+00:00 [running]> from DB
+[2024-10-18T18:23:04.274+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-18T18:23:09.324+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: btcusdt_data_ingestion.ingest_btcusdt manual__2024-10-18T18:08:07.061355+00:00 [running]> from DB
+[2024-10-18T18:23:09.339+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-18T18:23:14.386+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: btcusdt_data_ingestion.ingest_btcusdt manual__2024-10-18T18:08:07.061355+00:00 [running]> from DB
+[2024-10-18T18:23:14.417+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-18T18:23:19.514+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: btcusdt_data_ingestion.ingest_btcusdt manual__2024-10-18T18:08:07.061355+00:00 [running]> from DB
+[2024-10-18T18:23:19.590+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-18T18:23:24.648+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: btcusdt_data_ingestion.ingest_btcusdt manual__2024-10-18T18:08:07.061355+00:00 [running]> from DB
+[2024-10-18T18:23:24.676+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-18T18:23:29.715+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: btcusdt_data_ingestion.ingest_btcusdt manual__2024-10-18T18:08:07.061355+00:00 [running]> from DB
+[2024-10-18T18:23:29.729+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-18T18:23:34.765+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: btcusdt_data_ingestion.ingest_btcusdt manual__2024-10-18T18:08:07.061355+00:00 [running]> from DB
+[2024-10-18T18:23:34.783+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-18T18:23:39.820+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: btcusdt_data_ingestion.ingest_btcusdt manual__2024-10-18T18:08:07.061355+00:00 [running]> from DB
+[2024-10-18T18:23:39.841+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-18T18:23:44.874+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: btcusdt_data_ingestion.ingest_btcusdt manual__2024-10-18T18:08:07.061355+00:00 [running]> from DB
+[2024-10-18T18:23:44.892+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-18T18:23:49.948+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: btcusdt_data_ingestion.ingest_btcusdt manual__2024-10-18T18:08:07.061355+00:00 [running]> from DB
+[2024-10-18T18:23:49.966+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-18T18:23:55.494+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: btcusdt_data_ingestion.ingest_btcusdt manual__2024-10-18T18:08:07.061355+00:00 [running]> from DB
+[2024-10-18T18:24:21.428+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-18T18:24:22.659+0000] {local_task_job_runner.py:225} INFO - Task exited with return code Negsignal.SIGKILL
+[2024-10-18T18:24:23.538+0000] {dagrun.py:697} DEBUG - number of tis tasks for <DagRun btcusdt_data_ingestion @ 2024-10-18 18:08:07.061355+00:00: manual__2024-10-18T18:08:07.061355+00:00, state:running, queued_at: 2024-10-18 18:08:07.133679+00:00. externally triggered: True>: 0 task(s)
+[2024-10-18T18:24:23.553+0000] {taskinstance.py:2651} INFO - 0 downstream tasks scheduled from follow-on schedule check

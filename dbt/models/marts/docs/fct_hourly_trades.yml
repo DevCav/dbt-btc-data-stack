@@ -1,0 +1,38 @@
+version: 2
+
+models:
+  - name: fct_hourly_trades
+    description: "A table that takes trade data at the second level and converts it to hourly trade data with open and close prices for each hour. Additionally, calculates the percentage gain or loss for each hour."
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns:
+            - open_date
+            - open_hour
+
+    columns:
+      - name: open_date
+        description: "The date when the trading window opens."
+        tests:
+          - not_null
+
+      - name: open_hour
+        description: "The hour extracted from the open_time, representing the start of the trading window hour."
+        tests:
+          - not_null
+          - accepted_values:
+              values: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23]
+
+      - name: open_price
+        description: "The opening price of BTC/USDT for the hour."
+        tests:
+          - not_null
+
+      - name: close_price
+        description: "The closing price of BTC/USDT for the hour."
+        tests:
+          - not_null
+
+      - name: percent_gain
+        description: "The percentage gain or loss of BTC/USDT for the hour, calculated as (close_price - open_price) / open_price."
+        tests:
+          - not_null

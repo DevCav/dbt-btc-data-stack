@@ -1,0 +1,184 @@
+[2024-10-16T20:15:11.550+0000] {taskinstance.py:1037} DEBUG - previous_execution_date was called
+[2024-10-16T20:15:11.596+0000] {__init__.py:51} DEBUG - Loading core task runner: StandardTaskRunner
+[2024-10-16T20:15:11.620+0000] {taskinstance.py:1037} DEBUG - previous_execution_date was called
+[2024-10-16T20:15:11.630+0000] {base_task_runner.py:68} DEBUG - Planning to run as the  user
+[2024-10-16T20:15:11.643+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: btcusdt_data_ingestion.ingest_btcusdt manual__2024-10-16T20:00:12.557541+00:00 [queued]> from DB
+[2024-10-16T20:15:11.716+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: btcusdt_data_ingestion.ingest_btcusdt manual__2024-10-16T20:00:12.557541+00:00 [queued]> dependency 'Task Instance State' PASSED: True, Task state queued was valid.
+[2024-10-16T20:15:11.717+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: btcusdt_data_ingestion.ingest_btcusdt manual__2024-10-16T20:00:12.557541+00:00 [queued]> dependency 'Previous Dagrun State' PASSED: True, The task did not have depends_on_past set.
+[2024-10-16T20:15:11.718+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: btcusdt_data_ingestion.ingest_btcusdt manual__2024-10-16T20:00:12.557541+00:00 [queued]> dependency 'Task Instance Not Running' PASSED: True, Task is not in running state.
+[2024-10-16T20:15:11.734+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: btcusdt_data_ingestion.ingest_btcusdt manual__2024-10-16T20:00:12.557541+00:00 [queued]> dependency 'Not In Retry Period' PASSED: True, The task instance was not marked for retrying.
+[2024-10-16T20:15:11.738+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: btcusdt_data_ingestion.ingest_btcusdt manual__2024-10-16T20:00:12.557541+00:00 [queued]>
+[2024-10-16T20:15:11.739+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: btcusdt_data_ingestion.ingest_btcusdt manual__2024-10-16T20:00:12.557541+00:00 [queued]> dependency 'Task Concurrency' PASSED: True, Task concurrency is not set.
+[2024-10-16T20:15:11.739+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: btcusdt_data_ingestion.ingest_btcusdt manual__2024-10-16T20:00:12.557541+00:00 [queued]> dependency 'Previous Dagrun State' PASSED: True, The task did not have depends_on_past set.
+[2024-10-16T20:15:11.751+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: btcusdt_data_ingestion.ingest_btcusdt manual__2024-10-16T20:00:12.557541+00:00 [queued]> dependency 'Not In Retry Period' PASSED: True, The task instance was not marked for retrying.
+[2024-10-16T20:15:11.761+0000] {taskinstance.py:1112} DEBUG - <TaskInstance: btcusdt_data_ingestion.ingest_btcusdt manual__2024-10-16T20:00:12.557541+00:00 [queued]> dependency 'Pool Slots Available' PASSED: True, There are enough open slots in default_pool to execute the task
+[2024-10-16T20:15:11.762+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: btcusdt_data_ingestion.ingest_btcusdt manual__2024-10-16T20:00:12.557541+00:00 [queued]>
+[2024-10-16T20:15:11.762+0000] {taskinstance.py:1308} INFO - Starting attempt 2 of 2
+[2024-10-16T20:15:11.786+0000] {taskinstance.py:1327} INFO - Executing <Task(PythonOperator): ingest_btcusdt> on 2024-10-16 20:00:12.557541+00:00
+[2024-10-16T20:15:11.791+0000] {standard_task_runner.py:57} INFO - Started process 3363 to run task
+[2024-10-16T20:15:11.799+0000] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'btcusdt_data_ingestion', 'ingest_btcusdt', 'manual__2024-10-16T20:00:12.557541+00:00', '--job-id', '115', '--raw', '--subdir', 'DAGS_FOLDER/ingest_btcusdt_data.py', '--cfg-path', '/tmp/tmpb1onx4hv']
+[2024-10-16T20:15:11.802+0000] {standard_task_runner.py:85} INFO - Job 115: Subtask ingest_btcusdt
+[2024-10-16T20:15:11.803+0000] {cli_action_loggers.py:65} DEBUG - Calling callbacks: [<function default_action_log at 0x7f7ca9505550>]
+[2024-10-16T20:15:11.877+0000] {taskinstance.py:1037} DEBUG - previous_execution_date was called
+[2024-10-16T20:15:11.886+0000] {task_command.py:410} INFO - Running <TaskInstance: btcusdt_data_ingestion.ingest_btcusdt manual__2024-10-16T20:00:12.557541+00:00 [running]> on host 888d2c584607
+[2024-10-16T20:15:11.886+0000] {settings.py:353} DEBUG - Disposing DB connection pool (PID 3363)
+[2024-10-16T20:15:11.887+0000] {settings.py:212} DEBUG - Setting up DB connection pool (PID 3363)
+[2024-10-16T20:15:11.887+0000] {settings.py:285} DEBUG - settings.prepare_engine_args(): Using NullPool
+[2024-10-16T20:15:11.889+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: btcusdt_data_ingestion.ingest_btcusdt manual__2024-10-16T20:00:12.557541+00:00 [running]> from DB
+[2024-10-16T20:15:11.944+0000] {taskinstance.py:1037} DEBUG - previous_execution_date was called
+[2024-10-16T20:15:11.955+0000] {taskinstance.py:868} DEBUG - Clearing XCom data
+[2024-10-16T20:15:12.027+0000] {retries.py:80} DEBUG - Running RenderedTaskInstanceFields._do_delete_old_records with retries. Try 1 of 3
+[2024-10-16T20:15:12.049+0000] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='btcusdt_data_ingestion' AIRFLOW_CTX_TASK_ID='ingest_btcusdt' AIRFLOW_CTX_EXECUTION_DATE='2024-10-16T20:00:12.557541+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-10-16T20:00:12.557541+00:00'
+[2024-10-16T20:15:12.050+0000] {__init__.py:117} DEBUG - Preparing lineage inlets and outlets
+[2024-10-16T20:15:12.051+0000] {__init__.py:155} DEBUG - inlets: [], outlets: []
+[2024-10-16T20:15:12.309+0000] {base.py:73} INFO - Using connection ID 'company_dw' for task execution.
+[2024-10-16T20:15:16.861+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: btcusdt_data_ingestion.ingest_btcusdt manual__2024-10-16T20:00:12.557541+00:00 [running]> from DB
+[2024-10-16T20:15:16.884+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-16T20:15:21.916+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: btcusdt_data_ingestion.ingest_btcusdt manual__2024-10-16T20:00:12.557541+00:00 [running]> from DB
+[2024-10-16T20:15:21.935+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-16T20:15:26.986+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: btcusdt_data_ingestion.ingest_btcusdt manual__2024-10-16T20:00:12.557541+00:00 [running]> from DB
+[2024-10-16T20:15:27.006+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-16T20:15:32.040+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: btcusdt_data_ingestion.ingest_btcusdt manual__2024-10-16T20:00:12.557541+00:00 [running]> from DB
+[2024-10-16T20:15:32.065+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-16T20:15:37.121+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: btcusdt_data_ingestion.ingest_btcusdt manual__2024-10-16T20:00:12.557541+00:00 [running]> from DB
+[2024-10-16T20:15:37.136+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-16T20:15:42.173+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: btcusdt_data_ingestion.ingest_btcusdt manual__2024-10-16T20:00:12.557541+00:00 [running]> from DB
+[2024-10-16T20:15:42.190+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-16T20:15:47.243+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: btcusdt_data_ingestion.ingest_btcusdt manual__2024-10-16T20:00:12.557541+00:00 [running]> from DB
+[2024-10-16T20:15:47.264+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-16T20:15:52.315+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: btcusdt_data_ingestion.ingest_btcusdt manual__2024-10-16T20:00:12.557541+00:00 [running]> from DB
+[2024-10-16T20:15:52.331+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-16T20:15:57.394+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: btcusdt_data_ingestion.ingest_btcusdt manual__2024-10-16T20:00:12.557541+00:00 [running]> from DB
+[2024-10-16T20:15:57.413+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-16T20:16:02.490+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: btcusdt_data_ingestion.ingest_btcusdt manual__2024-10-16T20:00:12.557541+00:00 [running]> from DB
+[2024-10-16T20:16:02.623+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-16T20:16:07.670+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: btcusdt_data_ingestion.ingest_btcusdt manual__2024-10-16T20:00:12.557541+00:00 [running]> from DB
+[2024-10-16T20:16:07.699+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-16T20:16:12.819+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: btcusdt_data_ingestion.ingest_btcusdt manual__2024-10-16T20:00:12.557541+00:00 [running]> from DB
+[2024-10-16T20:16:12.975+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-16T20:16:18.044+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: btcusdt_data_ingestion.ingest_btcusdt manual__2024-10-16T20:00:12.557541+00:00 [running]> from DB
+[2024-10-16T20:16:18.137+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-16T20:16:23.225+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: btcusdt_data_ingestion.ingest_btcusdt manual__2024-10-16T20:00:12.557541+00:00 [running]> from DB
+[2024-10-16T20:16:23.242+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-16T20:16:28.306+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: btcusdt_data_ingestion.ingest_btcusdt manual__2024-10-16T20:00:12.557541+00:00 [running]> from DB
+[2024-10-16T20:16:28.324+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-16T20:16:33.384+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: btcusdt_data_ingestion.ingest_btcusdt manual__2024-10-16T20:00:12.557541+00:00 [running]> from DB
+[2024-10-16T20:16:33.403+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-16T20:16:38.441+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: btcusdt_data_ingestion.ingest_btcusdt manual__2024-10-16T20:00:12.557541+00:00 [running]> from DB
+[2024-10-16T20:16:38.457+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-16T20:16:43.489+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: btcusdt_data_ingestion.ingest_btcusdt manual__2024-10-16T20:00:12.557541+00:00 [running]> from DB
+[2024-10-16T20:16:43.505+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-16T20:16:48.558+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: btcusdt_data_ingestion.ingest_btcusdt manual__2024-10-16T20:00:12.557541+00:00 [running]> from DB
+[2024-10-16T20:16:48.580+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-16T20:16:53.622+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: btcusdt_data_ingestion.ingest_btcusdt manual__2024-10-16T20:00:12.557541+00:00 [running]> from DB
+[2024-10-16T20:16:53.641+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-16T20:16:58.690+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: btcusdt_data_ingestion.ingest_btcusdt manual__2024-10-16T20:00:12.557541+00:00 [running]> from DB
+[2024-10-16T20:16:58.709+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-16T20:17:03.750+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: btcusdt_data_ingestion.ingest_btcusdt manual__2024-10-16T20:00:12.557541+00:00 [running]> from DB
+[2024-10-16T20:17:03.766+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-16T20:17:08.833+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: btcusdt_data_ingestion.ingest_btcusdt manual__2024-10-16T20:00:12.557541+00:00 [running]> from DB
+[2024-10-16T20:17:09.005+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-16T20:17:14.064+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: btcusdt_data_ingestion.ingest_btcusdt manual__2024-10-16T20:00:12.557541+00:00 [running]> from DB
+[2024-10-16T20:17:14.092+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-16T20:17:19.155+0000] {taskinstance.py:789} DEBUG - Refreshing TaskInstance <TaskInstance: btcusdt_data_ingestion.ingest_btcusdt manual__2024-10-16T20:00:12.557541+00:00 [running]> from DB
+[2024-10-16T20:17:19.212+0000] {job.py:213} DEBUG - [heartbeat]
+[2024-10-16T20:17:51.470+0000] {job.py:216} ERROR - Job heartbeat got an exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 3366, in _wrap_pool_connect
+    return fn()
+  File "/home/airflow/.local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 327, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/airflow/.local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 894, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/airflow/.local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 493, in checkout
+    rec = pool._do_get()
+  File "/home/airflow/.local/lib/python3.9/site-packages/sqlalchemy/pool/impl.py", line 256, in _do_get
+    return self._create_connection()
+  File "/home/airflow/.local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 273, in _create_connection
+    return _ConnectionRecord(self)
+  File "/home/airflow/.local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 388, in __init__
+    self.__connect()
+  File "/home/airflow/.local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 691, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/home/airflow/.local/lib/python3.9/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/airflow/.local/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 686, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "/home/airflow/.local/lib/python3.9/site-packages/sqlalchemy/engine/create.py", line 574, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.9/site-packages/sqlalchemy/engine/default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.9/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: could not translate host name "airflowdb" to address: Temporary failure in name resolution
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/jobs/job.py", line 187, in heartbeat
+    session.merge(self)
+  File "/home/airflow/.local/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 3056, in merge
+    return self._merge(
+  File "/home/airflow/.local/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 3136, in _merge
+    merged = self.get(
+  File "/home/airflow/.local/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 2853, in get
+    return self._get_impl(
+  File "/home/airflow/.local/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 2975, in _get_impl
+    return db_load_fn(
+  File "/home/airflow/.local/lib/python3.9/site-packages/sqlalchemy/orm/loading.py", line 530, in load_on_pk_identity
+    session.execute(
+  File "/home/airflow/.local/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 1716, in execute
+    conn = self._connection_for_bind(bind)
+  File "/home/airflow/.local/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 1555, in _connection_for_bind
+    return self._transaction._connection_for_bind(
+  File "/home/airflow/.local/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 750, in _connection_for_bind
+    conn = bind.connect()
+  File "/home/airflow/.local/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 3320, in connect
+    return self._connection_cls(self, close_with_result=close_with_result)
+  File "/home/airflow/.local/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 96, in __init__
+    else engine.raw_connection()
+  File "/home/airflow/.local/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 3399, in raw_connection
+    return self._wrap_pool_connect(self.pool.connect, _connection)
+  File "/home/airflow/.local/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 3369, in _wrap_pool_connect
+    Connection._handle_dbapi_exception_noconnection(
+  File "/home/airflow/.local/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 2203, in _handle_dbapi_exception_noconnection
+    util.raise_(
+  File "/home/airflow/.local/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 3366, in _wrap_pool_connect
+    return fn()
+  File "/home/airflow/.local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 327, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/airflow/.local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 894, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/airflow/.local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 493, in checkout
+    rec = pool._do_get()
+  File "/home/airflow/.local/lib/python3.9/site-packages/sqlalchemy/pool/impl.py", line 256, in _do_get
+    return self._create_connection()
+  File "/home/airflow/.local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 273, in _create_connection
+    return _ConnectionRecord(self)
+  File "/home/airflow/.local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 388, in __init__
+    self.__connect()
+  File "/home/airflow/.local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 691, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/home/airflow/.local/lib/python3.9/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/airflow/.local/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 686, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "/home/airflow/.local/lib/python3.9/site-packages/sqlalchemy/engine/create.py", line 574, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.9/site-packages/sqlalchemy/engine/default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.9/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) could not translate host name "airflowdb" to address: Temporary failure in name resolution
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2024-10-16T20:18:17.044+0000] {local_task_job_runner.py:225} INFO - Task exited with return code Negsignal.SIGKILL
+[2024-10-16T20:18:17.719+0000] {dagrun.py:697} DEBUG - number of tis tasks for <DagRun btcusdt_data_ingestion @ 2024-10-16 20:00:12.557541+00:00: manual__2024-10-16T20:00:12.557541+00:00, state:running, queued_at: 2024-10-16 20:00:12.566038+00:00. externally triggered: True>: 0 task(s)
+[2024-10-16T20:18:17.732+0000] {taskinstance.py:2651} INFO - 0 downstream tasks scheduled from follow-on schedule check
